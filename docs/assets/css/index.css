@@ -164,7 +164,7 @@ ul {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 4;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -212,3 +212,4 @@ ul {
   background-color: #323232;
   color: #FF7F00;
 }
+
