@@ -222,44 +222,45 @@ ul {
 }
 
 /* xxl */
-@media (max-width: 1536px) {
+@media only screen (max-width: 1536px) {
 	.body__container {
 		max-width: 1280px;
 	}
 }
 
 /* xl */
-@media (max-width: 1280px) {
+@media only screen (max-width: 1280px) {
 	.body__container {
 		max-width: 1024px;
 	}
 }
 
 /* lg */
-@media (max-width: 1024px) {
+@media only screen (max-width: 1024px) {
 	.body__container {
 		max-width: 768px;
 	}
 }
 
 /* md */
-@media (max-width: 768px) {
+@media only screen (max-width: 768px) {
 	.body__container {
 		max-width: 640px;
 	}
 }
 
 /* sm */
-@media (max-width: 640px) {
+@media only screen (max-width: 640px) {
 	.body__container {
 		max-width: 480px;
 	}
 }
 
 /* xs */
-@media (max-width: 480px) {
+@media only screen (max-width: 480px) {
 	.body__container {
 		max-width: 100%;
 	}
 }
+
 
