@@ -164,7 +164,7 @@ ul {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 4;
+  z-index: 5;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -189,7 +189,7 @@ ul {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 360px;
+  width: 270px;
   height: 100%;
   margin: 0;
   padding: 80px 0;
@@ -197,6 +197,7 @@ ul {
   background-color: #212121;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
+  z-index: 4;
 }
 .menu__item {
   display: block;
@@ -212,4 +213,5 @@ ul {
   background-color: #323232;
   color: #FF7F00;
 }
+
 
