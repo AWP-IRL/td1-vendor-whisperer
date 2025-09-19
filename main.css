@@ -1,0 +1,141 @@
+body {
+	font-family: Lexend,Arial,Tahoma,Verdana,sans-serif;
+	background-color: #000;
+	color: #f3f3f3;
+}
+p {
+	font-size: 16px;
+	text-align:left;
+}
+a:link {
+	color: #b9b9b9;
+}
+a:visited {
+	color: #b9b9b9;
+}
+h1 {
+	color: #ff7f00;
+	font-size: 32px;
+	text-align: left;
+	font-weight: normal;
+}
+h2 {
+	color: #ff7f00;
+	font-size: 18px;
+	text-align: left;
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+img {
+	max-width: 150px;
+}
+ul {
+	margin-top: 0px;
+	padding-left: 15px;
+	font-size: 16px;
+}
+.fdiv {
+	max-width: 80%;
+	margin: auto;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+}
+.fdiv2 {
+	max-width: 80%;
+	margin: auto;
+	justify-content: center;
+	margin-top: 50px;
+}
+.flex-ge {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-ge > div {
+	margin-right: 20px;
+	padding-right: 50px;
+	max-width: 600px;
+	float: left;
+}
+.app {
+	color: #5bc1ab;
+	font-size: 14px;
+	text-align:left;
+}
+.nxt {
+	color: #b7b7b7;
+	text-align:left;
+}
+.ttl {
+	color: #b7b7b7;
+}
+
+.container {
+	width: 128px;
+	height: 128px;
+	background-color: transparent;
+	position: relative;
+	margin: auto;
+}
+
+.bgdcircle {
+	width: 128px;
+	height: 128px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 1;
+	border-radius: 50%;
+	opacity: 0.2;
+}
+
+.cart {
+	width: 128px;
+	height: 128px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 2;
+	clip-path: polygon(14px 16px, 24px 16px, 30px 38px, 113px 38px, 101px 88px, 32px 88px);
+}
+
+.bskt {
+	width: 128px;
+	height: 128px;
+	background-color: #000;
+	position: absolute;
+	z-index: 3;
+	clip-path: polygon(34px 50px, 98px 50px, 92px 78px, 41px 78px);
+	opacity: 0.6;
+}
+
+.wheel1 {
+	width: 24px;
+	height: 24px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 3;
+	border-radius: 50%;
+	left: 31px;
+	top: 96px;
+}
+
+.wheel2 {
+	width: 24px;
+	height: 24px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 3;
+	border-radius: 50%;
+	left: 78px;
+	top: 96px;
+}
+
+.logo {
+	float: left;
+	padding: 5px;
+}
+
+.textbox {
+	float: left;
+	padding: 5px;
+	flex-grow: 100;
+}
