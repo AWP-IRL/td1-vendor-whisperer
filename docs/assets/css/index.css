@@ -15,7 +15,7 @@ a.bdy:visited {
 }
 h1 {
 	color: #ff7f00;
-	font-size: 1.625rem;
+	font-size: 32px;
 	text-align: left;
 	font-weight: normal;
 }
@@ -262,6 +262,7 @@ ul {
 		max-width: 100%;
 	}
 }
+
 
 
 
