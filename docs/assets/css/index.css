@@ -145,6 +145,7 @@ ul {
 	float: left;
 	padding: 5px;
 	flex-grow: 100;
+	vertical-align: top;
 }
 
 #menu__toggle {
@@ -262,6 +263,7 @@ ul {
 		max-width: 100%;
 	}
 }
+
 
 
 
