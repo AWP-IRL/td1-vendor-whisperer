@@ -4,7 +4,8 @@ body {
 	color: #f3f3f3;
 }
 p {
-	font-size: 16px;
+	/*font-size: 16px;*/
+	font-size: 1rem;
 	text-align:left;
 }
 a.bdy:link {
@@ -262,5 +263,6 @@ ul {
 		max-width: 100%;
 	}
 }
+
 
 
