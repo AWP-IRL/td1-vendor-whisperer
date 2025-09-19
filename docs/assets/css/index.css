@@ -48,7 +48,6 @@ ul {
 	justify-content: center;
 	display: flex;
 	flex-direction: row;
-	background: pink;
 }
 .content__container {
 	/*max-width: 80%;*/
@@ -141,14 +140,12 @@ ul {
 .logo {
 	float: left;
 	padding: 5px;
-	background: blue;
 }
 
 .textbox {
 	float: left;
 	padding: 5px;
 	flex-grow: 100;
-	background: red;
 }
 
 #menu__toggle {
@@ -266,6 +263,7 @@ ul {
 		max-width: 100%;
 	}
 }
+
 
 
 
