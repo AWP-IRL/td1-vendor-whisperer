@@ -34,14 +34,21 @@ ul {
 	padding-left: 15px;
 	font-size: 16px;
 }
-.fdiv {
+.body__container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0.5rem;
+	padding-righ: 0.5rem;
+}
+.title__container {
 	max-width: 80%;
 	margin: auto;
 	justify-content: center;
 	display: flex;
 	flex-direction: row;
 }
-.fdiv2 {
+.content__container {
 	max-width: 80%;
 	margin: auto;
 	justify-content: center;
@@ -214,6 +221,46 @@ ul {
   color: #FF7F00;
 }
 
+/* xs */
+@media (min-width: 475px) {
+	.body__container {
+		max-width: 475px;
+	}
+}
 
+/* sm */
+@media (min-width: 640px) {
+	.body__container {
+		max-width: 640px;
+	}
+}
+
+/* md */
+@media (min-width: 768px) {
+	.body__container {
+		max-width: 768px;
+	}
+}
+
+/* lg */
+@media (min-width: 1024px) {
+	.body__container {
+		max-width: 1024px;
+	}
+}
+
+/* xl */
+@media (min-width: 1280px) {
+	.body__container {
+		max-width: 1280px;
+	}
+}
+
+/* xxl */
+@media (min-width: 1536px) {
+	.body__container {
+		max-width: 1536px;
+	}
+}
 
 
