@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:description" content="Your source for up-to-date vendor information, collected from in-game values" />
+		<meta name="twitter:title" content="The Division 1 Vendor Whisperer" />
+		<meta name="twitter:site" content="@awp_irl" />
+		<meta name="twitter:image" content="https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/summary_large_image.png" />
+		<meta name="twitter:creator" content="@awp_irl" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TD1 Vendor Whisperer - Character Stat Calculator</title>
+		<link rel="icon" type="image/x-icon" href="docs/assets/images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="docs/assets/css/stat-calc.css">
+	</head>
+	<body>
+		<div class="body__container">
+			<div class="hamburger-menu">
+			    <input id="menu__toggle" type="checkbox" />
+			    <label class="menu__btn" for="menu__toggle">
+			      <span></span>
+			    </label>
+			
+			    <ul class="menu__box">
+			    	<li><a class="menu__item" href="index.html">Home</a></li>
+					<li><span class="menu__header">Vendors</span></li>
+					<li><a class="menu__item2" href="appearance.html">Appearance</a></li>
+					<li><a class="menu__item2" href="blueprint.html">Blueprint</a></li>
+					<li><a class="menu__item2" href="level-6.html">Level 6: First Wave X-45</a></li>
+					<li><a class="menu__item2" href="level-26.html">Level 26: Assault rifles</a></li>
+					<li><a class="menu__item2" href="level-29.html">Level 29</a></li>
+					<li><a class="menu__item2" href="level-34.html">Level 34</a></li>
+					<li><a class="menu__item2" href="premium.html">Premium</a></li>
+					<li><a class="menu__item" href="assignments.html">Assignments</a></li>
+					<li><a class="menu__item" href="dz-blueprints.html">Dark Zone Blueprints</a></li>
+					<li><a class="menu__item" href="equipment-29.html">Equipment - Level 29</a></li>
+					<li><a class="menu__item" href="ge.html">Global Events</a></li>
+					<li><a class="menu__item" href="stat-calc.html">Stat Calculator</a></li>
+					<li><a class="menu__item" href="ext-links.html">Useful External Links</a></li>
+				</ul>
+			</div>
+			<div class="fdiv">
+				<h1>TD1 Character Stat Calculator</h1>
+				<p>Allows you to calculate the character stat values for fully optimized<br>gear, and maxed out gear mods. It also provides the normalized<br>character stat values for Last Stand or Skirmish.<br><br>
+				The totals at the bottom will update as you make changes to the gear and mods.<br><br>
+				You can set all items to a particular stat (i.e. Firearms, Stamina,<br>or Electronics) by double-clicking on the corresponding header<br><br></p>
+				
+				<form id="frm">
+					<table>
+						<tr>
+							<th class="th1">Slot</th>
+							<th class="th1">Rarity</th>
+							<th class="dc">FA</th>
+							<th class="dc">ST</th>
+							<th class="dc">EL</th>
+						</tr>
+						<tr class="r1">
+							<td id="ba">Body Armor</td>
+							<td>
+								<select class="s1" name="ba_rar" id="ba_rar">
+									<option value="he">High-End</option>
+									<option value="gs">Gear Set</option>
+									<option value="cl" selected>Classified</option>
+									<option value="ex">Exotic</option>
+								</select>
+							</td>
+							<td><input type="radio" id="ba_fa" name="ba" value="fa" checked></td>
+							<td><input type="radio" id="ba_st" name="ba" value="st"></td>
+							<td><input type="radio" id="ba_el" name="ba" value="el"></td>
+						</td>
+						<tr class="r2">
+							<td id="m">Mask</td>
+							<td>
+								<select class="s2" name="m_rar" id="m_rar">
+									<option value="he">High-End</option>
+									<option value="gs">Gear Set</option>
+									<option value="cl" selected>Classified</option>
+									<option value="ex">Exotic</option>
+								</select>
+							</td>
+							<td><input type="radio" id="m_fa" name="m" value="fa" checked></td>
+							<td><input type="radio" id="m_st" name="m" value="st"></td>
+							<td><input type="radio" id="m_el" name="m" value="el"></td>
+						</td>
+						<tr class="r1">
+							<td id="kp">Knee pads</td>
+							<td>
+								<select class="s1" name="kp_rar" id="kp_rar">
+									<option value="he">High-End</option>
+									<option value="gs">Gear Set</option>
+									<option value="cl" selected>Classified</option>
+									<option value="ex">Exotic</option>
+								</select>
+							</td>
+							<td><input type="radio" id="kp_fa" name="kp" value="fa" checked></td>
+							<td><input type="radio" id="kp_st" name="kp" value="st"></td>
+							<td><input type="radio" id="kp_el" name="kp" value="el"></td>
+						</td>
+						<tr class="r2">
+							<td id="bp">Backpack</td>
+							<td>
+								<select class="s2" name="bp_rar" id="bp_rar">
+									<option value="he">High-End</option>
+									<option value="gs">Gear Set</option>
+									<option value="cl" selected>Classified</option>
+									<option value="ex">Exotic</option>
+								</select>
+							</td>
+							<td><input type="radio" id="bp_fa" name="bp" value="fa" checked></td>
+							<td><input type="radio" id="bp_st" name="bp" value="st"></td>
+							<td><input type="radio" id="bp_el" name="bp" value="el"></td>
+						</td>
+						<tr class="r1">
+							<td id="g">Gloves</td>
+							<td>
+								<select class="s1" name="g_rar" id="g_rar">
+									<option value="he">High-End</option>
+									<option value="gs">Gear Set</option>
+									<option value="cl" selected>Classified</option>
+									<option value="ex">Exotic</option>
+								</select>
+							</td>
+							<td><input type="radio" id="g_fa" name="g" value="fa" checked></td>
+							<td><input type="radio" id="g_st" name="g" value="st"></td>
+							<td><input type="radio" id="g_el" name="g" value="el"></td>
+						</td>
+						<tr class="r2">
+							<td id="h">Holster</td>
+							<td>
+								<select class="s2" name="h_rar" id="h_rar">
+									<option value="he">High-End</option>
+									<option value="gs">Gear Set</option>
+									<option value="cl" selected>Classified</option>
+									<option value="ex">Exotic</option>
+								</select>
+							</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</td>
+						<tr class="r1">
+							<td id="gm1">Gear Mod 1</td>
+							<td>
+								<select class="s1" name="gm1_rar" id="gm1_rar">
+									<option value="su">Superior</option>
+									<option value="he" selected>High-End</option>
+								</select>
+							</td>
+							<td><input type="radio" id="gm1_fa" name="gm1" value="fa" checked></td>
+							<td><input type="radio" id="gm1_st" name="gm1" value="st"></td>
+							<td><input type="radio" id="gm1_el" name="gm1" value="el"></td>
+						</td>
+						<tr class="r2">
+							<td id="gm2">Gear Mod 2</td>
+							<td>
+								<select class="s2" name="gm2_rar" id="gm2_rar">
+									<option value="su">Superior</option>
+									<option value="he" selected>High-End</option>
+								</select>
+							</td>
+							<td><input type="radio" id="gm2_fa" name="gm2" value="fa" checked></td>
+							<td><input type="radio" id="gm2_st" name="gm2" value="st"></td>
+							<td><input type="radio" id="gm2_el" name="gm2" value="el"></td>
+						</td>
+						<tr class="r1">
+							<td id="gm3">Gear Mod 3</td>
+							<td>
+								<select class="s1" name="gm3_rar" id="gm3_rar">
+									<option value="su">Superior</option>
+									<option value="he" selected>High-End</option>
+								</select>
+							</td>
+							<td><input type="radio" id="gm3_fa" name="gm3" value="fa" checked></td>
+							<td><input type="radio" id="gm3_st" name="gm3" value="st"></td>
+							<td><input type="radio" id="gm3_el" name="gm3" value="el"></td>
+						</td>
+						<tr class="r2">
+							<td id="gm4">Gear Mod 4</td>
+							<td>
+								<select class="s2" name="gm4_rar" id="gm4_rar">
+									<option value="su">Superior</option>
+									<option value="he" selected>High-End</option>
+								</select>
+							</td>
+							<td><input type="radio" id="gm4_fa" name="gm4" value="fa" checked></td>
+							<td><input type="radio" id="gm4_st" name="gm4" value="st"></td>
+							<td><input type="radio" id="gm4_el" name="gm4" value="el"></td>
+						</td>
+						<tr class="r1">
+							<td id="gm5">Gear Mod 5</td>
+							<td>
+								<select class="s1" name="gm5_rar" id="gm5_rar">
+									<option value="su">Superior</option>
+									<option value="he" selected>High-End</option>
+								</select>
+							</td>
+							<td><input type="radio" id="gm5_fa" name="gm5" value="fa" checked></td>
+							<td><input type="radio" id="gm5_st" name="gm5" value="st"></td>
+							<td><input type="radio" id="gm5_el" name="gm5" value="el"></td>
+						</tr>
+						<tr>
+							<th class="thspace" colspan=5>&nbsp;</th>
+						</tr>
+						<tr>
+							<th class="th1" colspan=5>Regular</th>
+						</tr>
+						<tr>
+							<th class="th2">Firearms</th>
+							<th class="th2">Stamina</th>
+							<th class="th2" colspan=3>Electronics</th>
+						</tr>
+						<tr class="r2 totals">
+							<td id="r_fa">2961</td>
+							<td id="r_st">2961</td>
+							<td id="r_el"colspan=3>2961</td>
+						</tr>
+						<tr>
+							<th class="thspace" colspan=5>&nbsp;</th>
+						</tr>
+						<tr>
+							<th class="th1" colspan=5>Normalized</th>
+						</tr>
+						<tr>
+							<th class="th2">Firearms</th>
+							<th class="th2">Stamina</th>
+							<th class="th2" colspan=3>Electronics</th>
+						</tr>
+						<tr class="r2 totals">
+							<td id="n_fa">2961</td>
+							<td id="n_st">2961</td>
+							<td id="n_el" colspan=3>2961</td>
+						</tr>
+						
+						
+					</table>
+					<br>
+					<button type="button" id="myreset">Reset</button>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script src="docs/assets/js/index.js"></script>	
+</html>
