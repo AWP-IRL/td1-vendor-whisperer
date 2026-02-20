@@ -221,6 +221,16 @@ ul {
   background-color: #323232;
   color: #FF7F00;
 }
+.menu__item2 {
+  display: block;
+  padding: 12px 12px;
+  color: #f3f3f3;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition-duration: .25s;
+}
 
 /* xxl */
 @media only screen (max-width: 1536px) {
@@ -263,12 +273,3 @@ ul {
 		max-width: 100%;
 	}
 }
-
-
-
-
-
-
-
-
-
