@@ -1,45 +1,45 @@
 //Returns formatted user time zone
 function getTimeZoneDisplayName(zoneNameFormat = "short") {
-  let formatter = new Intl.DateTimeFormat(undefined, {
-    timeZoneName: zoneNameFormat
-  });
-  return formatter.formatToParts(Date.now())
-    .find(part => part.type === "timeZoneName")['value'];
+	let formatter = new Intl.DateTimeFormat(undefined, {
+		timeZoneName: zoneNameFormat
+	});
+	return formatter.formatToParts(Date.now())
+		.find(part => part.type === "timeZoneName")['value'];
 }
 
 // Function that updates the countdown
 function countDownOut (toDate, toElement) {
-  // Update the count down every 1 second
-  var x = setInterval(
-    function() {
+	// Update the count down every 1 second
+	var x = setInterval(
+		function() {
 
-      // Get today's date and time
-      var now = new Date().getTime();
+			// Get today's date and time
+			var now = new Date().getTime();
 
-      // Find the distance between now and the count down date
-      var distance = toDate - now;
+			// Find the distance between now and the count down date
+			var distance = toDate - now;
 
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Output the result in an element with id="dacount"
-      document.getElementById(toElement).innerHTML = days + ":" + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
+			// Output the result in an element with id="dacount"
+			document.getElementById(toElement).innerHTML = days + ":" + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
 
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById(toElement).innerHTML = "Information update in progress";
-      }
-    }
-  , 1000);
+			// If the count down is over, write some text 
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById(toElement).innerHTML = "Information update in progress";
+			}
+		}
+	, 1000);
 }
 
 //Calling the countdown function
 //Daily Assignments
-var tSUTC = new Date("09/20/2025 0:00:00 UTC");
+var tSUTC = new Date("2/21/2026 0:00:00 UTC");
 var cDD1 = tSUTC.getTime();
 var cDEl1 = 'dacount'
 countDownOut(cDD1, cDEl1);
@@ -48,7 +48,7 @@ var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slic
 document.getElementById('dastamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
 
 //Weekly Assignments
-var tSUTC = new Date("09/23/2025 0:00:00 UTC");
+var tSUTC = new Date("2/24/2026 0:00:00 UTC");
 var cDD2 = tSUTC.getTime();
 var cDEl2 = "wacount"
 countDownOut(cDD2, cDEl2);
@@ -57,13 +57,31 @@ var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slic
 document.getElementById('wastamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
 
 //Daily Missions
-var tSUTC = new Date("09/20/2025 0:00:00 UTC");
+var tSUTC = new Date("2/21/2026 0:00:00 UTC");
 var cDD3 = tSUTC.getTime();
 var cDEl3 = "dmcount"
 countDownOut(cDD3, cDEl3);
 var tSUTCOut = '' + tSUTC.getUTCFullYear() + '-' + ('0' + (tSUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getUTCDate()).slice(-2) + ' ' + tSUTC.getUTCHours() + ':' + ('0' + tSUTC.getUTCMinutes()).slice(-2) + ' UTC'
 var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getDate()).slice(-2) + ' ' + tSUTC.getHours() + ':' + ('0' + tSUTC.getMinutes()).slice(-2) + ' UTC' + tSUTC.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
 document.getElementById('dmstamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
+
+//Weekly DZ
+var tSUTC = new Date("2/22/2026 0:00:00 UTC");
+var cDD7 = tSUTC.getTime();
+var cDEl7 = "dzwcount"
+countDownOut(cDD7, cDEl7);
+var tSUTCOut = '' + tSUTC.getUTCFullYear() + '-' + ('0' + (tSUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getUTCDate()).slice(-2) + ' ' + tSUTC.getUTCHours() + ':' + ('0' + tSUTC.getUTCMinutes()).slice(-2) + ' UTC'
+var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getDate()).slice(-2) + ' ' + tSUTC.getHours() + ':' + ('0' + tSUTC.getMinutes()).slice(-2) + ' UTC' + tSUTC.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
+document.getElementById('dzwstamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
+
+//Monthly DZ
+var tSUTC = new Date("3/1/2026 0:00:00 UTC");
+var cDD8 = tSUTC.getTime();
+var cDEl8 = "dzmcount"
+countDownOut(cDD8, cDEl8);
+var tSUTCOut = '' + tSUTC.getUTCFullYear() + '-' + ('0' + (tSUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getUTCDate()).slice(-2) + ' ' + tSUTC.getUTCHours() + ':' + ('0' + tSUTC.getUTCMinutes()).slice(-2) + ' UTC'
+var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getDate()).slice(-2) + ' ' + tSUTC.getHours() + ':' + ('0' + tSUTC.getMinutes()).slice(-2) + ' UTC' + tSUTC.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
+document.getElementById('dzmstamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
 
 //Incursions and Legendary Missions
 let cDEl4 = "legcount"
@@ -115,12 +133,12 @@ let intUTCMon;
 let intUTCDyn;	
 
 if (intUTCDyc >= 15) {
-  if (intUTCMoc === 11) {
-    intUTCYrn = intUTCYrc + 1;
-    intUTCMon = 1;
+  if (intUTCMoc === 12) {
+	  intUTCYrn = intUTCYrc + 1;
+	  intUTCMon = 1;
   } else {
-    intUTCYrn = intUTCYrc;
-    intUTCMon = intUTCMoc + 1;
+	  intUTCYrn = intUTCYrc;
+	  intUTCMon = intUTCMoc + 1;
   }
   intUTCDyn = 1;		
 } else {
@@ -130,11 +148,11 @@ if (intUTCDyc >= 15) {
 }		
 let dtmUTCn = new Date(new Date(dtmUTCc.setUTCFullYear(intUTCYrn, intUTCMon, intUTCDyn)).setUTCHours(0,0,0,0));
 let txtUTCn = '' + dtmUTCn.getUTCFullYear() + '-' + ('0' + (dtmUTCn.getUTCMonth() + 1)).slice(-2) 
-    + '-' + ('0' + dtmUTCn.getUTCDate()).slice(-2) + ' ' + dtmUTCn.getUTCHours() + ':' 
-  + ('0' + dtmUTCn.getUTCMinutes()).slice(-2) + ' UTC'
+	  + '-' + ('0' + dtmUTCn.getUTCDate()).slice(-2) + ' ' + dtmUTCn.getUTCHours() + ':' 
+	+ ('0' + dtmUTCn.getUTCMinutes()).slice(-2) + ' UTC'
 let txtUTZn = '' + dtmUTCn.getFullYear() + '-' + ('0' + (dtmUTCn.getMonth() + 1)).slice(-2) + '-' + ('0' + dtmUTCn.getDate()).slice(-2) + ' ' 
-  + dtmUTCn.getHours() + ':' + ('0' + dtmUTCn.getMinutes()).slice(-2) + ' UTC' + dtmUTCn.getTimezoneOffset() / -60 + ' (' 
-  + getTimeZoneDisplayName('short') + ')';
+	+ dtmUTCn.getHours() + ':' + ('0' + dtmUTCn.getMinutes()).slice(-2) + ' UTC' + dtmUTCn.getTimezoneOffset() / -60 + ' (' 
+	+ getTimeZoneDisplayName('short') + ')';
 
 let cDEl6 = 'supcount';
 countDownOut(dtmUTCn, cDEl6);
