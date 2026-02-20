@@ -34,12 +34,13 @@ var x = setInterval(
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="gecount"
-		document.getElementById("gecount").innerHTML = 'Blackout Global Event begins in ' + days + ":" + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
+		document.getElementById("gecount").innerHTML = 'Strike Global Event begins in ' + days + ":" + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
 
 		// If the count down is over, write some text 
 		if (distance < 0) {
 			clearInterval(x);
-			document.getElementById("gecount").innerHTML = "Blackout Global Event has begun";
+			document.getElementById("gecount").innerHTML = "Strike Global Event has begun";
 		}
 	}
 , 1000);
+
