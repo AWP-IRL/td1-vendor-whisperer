@@ -227,7 +227,7 @@ ul {
   color: #f3f3f3;
   font-family: 'Lexend', sans-serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
   transition-duration: .25s;
 }
@@ -273,6 +273,7 @@ ul {
 		max-width: 100%;
 	}
 }
+
 
 
 
