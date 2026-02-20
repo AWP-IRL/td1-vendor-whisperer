@@ -223,7 +223,7 @@ ul {
 }
 .menu__item2 {
   display: block;
-  padding: 12px 12px;
+  padding: 6px 12px 6px 24px;
   color: #f3f3f3;
   font-family: 'Lexend', sans-serif;
   font-size: 16px;
@@ -273,3 +273,13 @@ ul {
 		max-width: 100%;
 	}
 }
+
+
+
+
+
+
+
+
+
+
