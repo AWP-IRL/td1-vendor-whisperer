@@ -1,0 +1,811 @@
+th {
+	background-color: #000;
+	color: #ff7f00;
+	font-weight: bold;
+	min-width: 35px;
+}
+td {
+	background-color: #000;
+	text-align: right;
+}
+.td0 {
+	background-color: #1c1c1c;
+}
+.td1 {
+	background-color: #2f2f2f;
+}
+.tdt {
+	text-align: left;
+}
+body {
+	font-family: Lexend,Arial,Tahoma,Verdana,sans-serif;
+	background-color: #000;
+	color: #f3f3f3;
+	font-size: 14px;
+}
+a:link {
+	color: #ff7f00;
+}
+a:visited {
+	color: #ff7f00;
+}
+h1 {
+	color: #ff7f00;
+	font-size: 24px;
+	text-align: center;
+}
+h2 {
+	color: #ff7f00;
+	font-size: 18px;
+}
+ul {
+	margin-top: 0px;
+	padding-left: 15px;
+}
+button {
+	color: #ff7f00;
+}
+.he {
+	color: #e69f16;
+}
+.min {
+	color: #F24241;
+}
+.timer {
+	font-size: 12px;
+	color: #b7b7b7;
+}
+.ttl {
+	color: #ff7f00;
+	text-decoration: underline;
+}
+.ttls {
+	color: #b7b7b7;
+}
+.sp {
+	color: #5572D4;
+}
+.st {
+	color: #78C832;
+}
+.su {
+	color: #9b5a88;
+}
+.fdiv {
+	max-width: 80%;
+	margin: auto;
+	justify-content: center;
+}
+.sec1 {
+	background-color: #1c1c1c;
+	font-size: 13.333px;
+	padding: 5px;
+}
+.sec2 {
+	background-color: #2f2f2f;
+	font-size: 13.333px;
+	padding: 5px;
+}
+.grid-container1 {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 150px 150px;
+}
+.grid-item1 {
+	padding: 4px;
+}
+.grid-item2 {
+	padding: 4px;
+	grid-column-start: 1;
+	grid-column-end: span 2;
+}
+.collapsible {
+	font-family: Lexend,Arial,Tahoma,Verdana,sans-serif;
+	cursor: pointer;
+	padding: 8px;
+	width: 100%;
+	border: none;
+	border-bottom: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #b9b9b9;
+	text-align: left;
+	outline: none;
+	font-size: 16px;
+}
+.collapsible:hover {
+	background-color: #000;
+	color: #fff;
+}
+.content {
+	display: grid;
+	grid-template-rows: auto;
+	padding: 8px 8px;
+	display: none;
+	overflow:auto;
+	max-height:400px;
+}
+.collapsible:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.ge-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 150px);
+	row-gap: 5px;
+	column-gap: 10px;
+	grid-auto-flow: dense;
+	max-width: 100%;
+	margin: auto;
+}
+
+.ge-g0 {
+	grid-template-rows: auto 150px auto 150px;
+	grid-template-areas:
+		"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+		"item-0-01 item-0-02 item-0-03 item-0-04 item-0-05 item-0-06 item-0-07"
+		"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+		"item-0-11 item-0-12 item-0-13 item-0-14 item-0-15 item-0-16 .";
+}
+
+.ge-g1 {
+	grid-template-rows: auto 150px auto 150px;
+	grid-template-areas:
+		"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+		"item-1-01 item-1-02 item-1-03 item-1-04 item-1-05 item-1-06 item-1-07"
+		"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+		"item-1-11 item-1-12 item-1-13 item-1-14 item-1-15 item-1-16 item-1-17";
+}
+
+.ge-g2 {
+	grid-template-rows: auto 150px auto 150px;
+	grid-template-areas:
+		"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+		"item-2-01 item-2-02 item-2-03 item-2-04 item-2-05 item-2-06"
+		"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+		"item-2-11 item-2-12 item-2-13 . . .";
+}
+
+.ge-g3 {
+	grid-template-rows: auto 150px auto 150px;
+	grid-template-areas:
+		"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+		"item-3-01 item-3-02 item-3-03 item-3-04 item-3-05 item-3-06"
+		"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+		"item-3-11 item-3-12 item-3-13 . . .";
+}
+
+.ge-g4 {
+	grid-template-rows: auto 150px auto 150px;
+	grid-template-areas:
+		"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+		"item-4-01 item-4-02 item-4-03 item-4-04 item-4-05 item-4-06 item-4-07"
+		"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+		"item-4-11 item-4-12 item-4-13 item-4-14 item-4-15 item-4-16 item-4-17";
+}
+
+.ge-g5 {
+	grid-template-rows: auto 150px auto 150px;
+	grid-template-areas:
+		"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+		"item-5-01 item-5-02 item-5-03 item-5-04 item-5-05 item-5-06 item-5-07"
+		"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+		"item-5-11 item-5-12 item-5-13 item-5-14 item-5-15 item-5-16 item-5-17";
+}
+
+.gallery-item {
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out;
+	-webkit-align-content: flex-end;
+	-ms-flex-line-pack: flex-end;
+	align-content: flex-end;
+	height: 150px;
+	width: 130px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.ge-hdr1 {
+	grid-area: ge-hdr1;
+	vertical-align: bottom;
+}
+.ge-hdr2 {
+	grid-area: ge-hdr2;
+	vertical-align: bottom;
+}		
+.item-0-01 {
+	grid-area: item-0-01;
+	background-image: url('docs/assets/images/ge/Assault-Piggy_mask.png');
+}
+.item-0-02 {
+	grid-area: item-0-02;
+	background-image: url('docs/assets/images/ge/Assault-Hockey_mask.png');
+}
+.item-0-03 {
+	grid-area: item-0-03;
+	background-image: url('docs/assets/images/ge/Assault-Happy_mask.png');
+}
+.item-0-04 {
+	grid-area: item-0-04;
+	background-image: url('docs/assets/images/ge/Assault-Figurehead_patch.png');
+}
+.item-0-05 {
+	grid-area: item-0-05;
+	background-image: url('docs/assets/images/ge/Assault-Cost_Control_patch.png');
+}
+.item-0-06 {
+	grid-area: item-0-06;
+	background-image: url('docs/assets/images/ge/Assault-Flaming_Skull_patch.png');
+}
+.item-0-07 {
+	grid-area: item-0-07;
+	background-image: url('docs/assets/images/ge/Assault-Manhattan_Massacre_patch.png');
+}
+.item-0-11 {
+	grid-area: item-0-11;
+	background-image: url('docs/assets/images/ge/Assault-1-Vectors-Magma.png');
+}
+.item-0-12 {
+	grid-area: item-0-12;
+	background-image: url('docs/assets/images/ge/Assault-1-Vectors-Engineer.png');
+}
+.item-0-13 {
+	grid-area: item-0-13;
+	background-image: url('docs/assets/images/ge/Assault-2-Shirt.png');
+}
+.item-0-14 {
+	grid-area: item-0-14;
+	background-image: url('docs/assets/images/ge/Assault-2-Pants.png');
+}
+.item-0-15 {
+	grid-area: item-0-15;
+	background-image: url('docs/assets/images/ge/Assault-2-Shoes.png');
+}
+.item-0-16 {
+	grid-area: item-0-16;
+	background-image: url('docs/assets/images/ge/Assault-3-Vectors-Roboto.png');
+}
+.item-1-01 {
+	grid-area: item-1-01;
+	background-image: url('docs/assets/images/ge/Strike-Classic_mask.png');
+}
+.item-1-02 {
+	grid-area: item-1-02;
+	background-image: url('docs/assets/images/ge/Strike-Rider_mask.png');
+}
+.item-1-03 {
+	grid-area: item-1-03;
+	background-image: url('docs/assets/images/ge/Strike-Jungle_mask.png');
+}
+.item-1-04 {
+	grid-area: item-1-04;
+	background-image: url('docs/assets/images/ge/Strike-Pulling_the_Pin_patch.png');
+}
+.item-1-05 {
+	grid-area: item-1-05;
+	background-image: url('docs/assets/images/ge/Strike-Strike_patch.png');
+}
+.item-1-06 {
+	grid-area: item-1-06;
+	background-image: url('docs/assets/images/ge/Strike-Self-extinction_patch.png');
+}
+.item-1-07 {
+	grid-area: item-1-07;
+	background-image: url('docs/assets/images/ge/Strike-Steel_Badge_patch.png');
+}
+.item-1-11 {
+	grid-area: item-1-11;
+	background-image: url('docs/assets/images/ge/Strike-1-Technica-Red_Baron.png');
+}
+.item-1-12 {
+	grid-area: item-1-12;
+	background-image: url('docs/assets/images/ge/Strike-1-Enforcer-Blitz.png');
+}
+.item-1-13 {
+	grid-area: item-1-13;
+	background-image: url('docs/assets/images/ge/Strike-2-Shirt.png');
+}
+.item-1-14 {
+	grid-area: item-1-14;
+	background-image: url('docs/assets/images/ge/Strike-2-Pants.png');
+}
+.item-1-15 {
+	grid-area: item-1-15;
+	background-image: url('docs/assets/images/ge/Strike-2-Shoes');
+}
+.item-1-16 {
+	grid-area: item-1-16;
+	background-image: url('docs/assets/images/ge/Strike-3-Jacket.png');
+}
+.item-1-17 {
+	grid-area: item-1-17;
+	background-image: url('docs/assets/images/ge/Strike-3-Simplex-Krieger.png');
+}
+.item-2-01 {
+	grid-area: item-2-01;
+	background-image: url('docs/assets/images/ge/Blackout-Tao_mask.png');
+}
+.item-2-02 {
+	grid-area: item-2-02;
+	background-image: url('docs/assets/images/ge/Blackout-Rictus_mask.png');
+}
+.item-2-03 {
+	grid-area: item-2-03;
+	background-image: url('docs/assets/images/ge/Blackout-Vulcan_mask.png');
+}
+.item-2-04 {
+	grid-area: item-2-04;
+	background-image: url('docs/assets/images/ge/Blackout-Mirrorball_patch.png');
+}
+.item-2-05 {
+	grid-area: item-2-05;
+	background-image: url('docs/assets/images/ge/Blackout-Graveyard_patch.png');
+}
+.item-2-06 {
+	grid-area: item-2-06;
+	background-image: url('docs/assets/images/ge/Blackout-Electroshock_patch.png');
+}
+.item-2-11 {
+	grid-area: item-2-11;
+	background-image: url('docs/assets/images/ge/Blackout-1-Elemental-Crackle.png');
+}
+.item-2-12 {
+	grid-area: item-2-12;
+	background-image: url('docs/assets/images/ge/Blackout-2-Elemental-Blast.png');
+}
+.item-2-13 {
+	grid-area: item-2-13;
+	background-image: url('docs/assets/images/ge/Blackout-3-Elemental-Discharge.png');
+}
+.item-3-01 {
+	grid-area: item-3-01;
+	background-image: url('docs/assets/images/ge/Onslaught-Oni_mask.png');
+}
+.item-3-02 {
+	grid-area: item-3-02;
+	background-image: url('docs/assets/images/ge/Onslaught-Ember_mask.png');
+}
+.item-3-03 {
+	grid-area: item-3-03;
+	background-image: url('docs/assets/images/ge/Onslaught-Smiler_mask.png');
+}
+.item-3-04 {
+	grid-area: item-3-04;
+	background-image: url('docs/assets/images/ge/Onslaught-Bullseye_patch.png');
+}
+.item-3-05 {
+	grid-area: item-3-05;
+	background-image: url('docs/assets/images/ge/Onslaught-Falcon_patch.png');
+}
+.item-3-06 {
+	grid-area: item-3-06;
+	background-image: url('docs/assets/images/ge/Onslaught-Blast_Off_patch.png');
+}
+.item-3-11 {
+	grid-area: item-3-11;
+	background-image: url('docs/assets/images/ge/Onslaught-1-Elemental-Molten.png');
+}
+.item-3-12 {
+	grid-area: item-3-12;
+	background-image: url('docs/assets/images/ge/Onslaught-2-Elemental-Ashes.png');
+}
+.item-3-13 {
+	grid-area: item-3-13;
+	background-image: url('docs/assets/images/ge/Onslaught-3-Elemental-Cracks.png');
+}
+.item-4-01 {
+	grid-area: item-4-01;
+	background-image: url('docs/assets/images/ge/Outbreak-Trench_mask.png');
+}
+.item-4-02 {
+	grid-area: item-4-02;
+	background-image: url('docs/assets/images/ge/Outbreak-CBRN_mask.png');
+}
+.item-4-03 {
+	grid-area: item-4-03;
+	background-image: url('docs/assets/images/ge/Outbreak-Chemist_mask.png');
+}
+.item-4-04 {
+	grid-area: item-4-04;
+	background-image: url('docs/assets/images/ge/Outbreak-Pandemic_patch.png');
+}
+.item-4-05 {
+	grid-area: item-4-05;
+	background-image: url('docs/assets/images/ge/Outbreak-Intoxicated_patch.png');
+}
+.item-4-06 {
+	grid-area: item-4-06;
+	background-image: url('docs/assets/images/ge/Outbreak-Gunslinger_patch.png');
+}
+.item-4-07 {
+	grid-area: item-4-07;
+	background-image: url('docs/assets/images/ge/Outbreak-HairOTheDog_patch.png');
+}
+.item-4-11 {
+	grid-area: item-4-11;
+	background-image: url('docs/assets/images/ge/Outbreak-1-Crevasse-Strata.png');
+}
+.item-4-12 {
+	grid-area: item-4-12;
+	background-image: url('docs/assets/images/ge/Outbreak-1-Virus-Chimera.png');
+}
+.item-4-13 {
+	grid-area: item-4-13;
+	background-image: url('docs/assets/images/ge/Outbreak-2-Hat.png');
+}
+.item-4-14 {
+	grid-area: item-4-14;
+	background-image: url('docs/assets/images/ge/Outbreak-2-Shirt.png');
+}
+.item-4-15 {
+	grid-area: item-4-15;
+	background-image: url('docs/assets/images/ge/Outbreak-2-Pants.png');
+}
+.item-4-16 {
+	grid-area: item-4-16;
+	background-image: url('docs/assets/images/ge/Outbreak-2-Shoes.png');
+}
+.item-4-17 {
+	grid-area: item-4-17;
+	background-image: url('docs/assets/images/ge/Outbreak-3-Virus-Plasmid.png');
+}
+.item-5-01 {
+	grid-area: item-5-01;
+	background-image: url('docs/assets/images/ge/Ambush-Bug_mask.png');
+}
+.item-5-02 {
+	grid-area: item-5-02;
+	background-image: url('docs/assets/images/ge/Ambush-Haze_mask.png');
+}
+.item-5-03 {
+	grid-area: item-5-03;
+	background-image: url('docs/assets/images/ge/Ambush-Cage_mask.png');
+}
+.item-5-04 {
+	grid-area: item-5-04;
+	background-image: url('docs/assets/images/ge/Ambush-Gone_Hunting_patch.png');
+}
+.item-5-05 {
+	grid-area: item-5-05;
+	background-image: url('docs/assets/images/ge/Ambush-Shoulder_Buster_patch.png');
+}
+.item-5-06 {
+	grid-area: item-5-06;
+	background-image: url('docs/assets/images/ge/Ambush-Clear_and_Hold_patch.png');
+}
+.item-5-07 {
+	grid-area: item-5-07;
+	background-image: url('docs/assets/images/ge/Ambush-Sucker_Punch_patch.png');
+}
+.item-5-11 {
+	grid-area: item-5-11;
+	background-image: url('docs/assets/images/ge/Ambush-1-Beams-Electra.png');
+}
+.item-5-12 {
+	grid-area: item-5-12;
+	background-image: url('docs/assets/images/ge/Ambush-1-Frontier-Military.png');
+}
+.item-5-13 {
+	grid-area: item-5-13;
+	background-image: url('docs/assets/images/ge/Ambush-2-Shirt.png');
+}
+.item-5-14 {
+	grid-area: item-5-14;
+	background-image: url('docs/assets/images/ge/Ambush-2-Pants.png');
+}
+.item-5-15 {
+	grid-area: item-5-15;
+	background-image: url('docs/assets/images/ge/Ambush-2-Shoes.png');
+}
+.item-5-16 {
+	grid-area: item-5-16;
+	background-image: url('docs/assets/images/ge/Ambush-3-Hat.png');
+}
+.item-5-17 {
+	grid-area: item-5-17;
+	background-image: url('docs/assets/images/ge/Ambush-3-Lightning-Ice.png');
+}
+
+.item_title {
+	display: block;
+	font-weight: 700;
+	margin: 0;
+	width: 130px;
+	overflow-wrap: break-word;
+	color: #ffffff;
+	font-size: 12px;
+	background: rgba(67, 67, 67, 0.75);
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1430px) {
+	.ge-g0 {
+		grid-template-rows: auto repeat(2, 150px) auto repeat(2, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+			"item-0-01 item-0-02 item-0-03 item-0-04"
+			"item-0-05 item-0-06 item-0-07 ."
+			"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+			"item-0-11 item-0-12 item-0-13 item-0-14"
+			"item-0-15 item-0-16 . .";
+	}
+	.ge-g1 {
+		grid-template-rows: auto repeat(2, 150px) auto repeat(2, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+			"item-1-01 item-1-02 item-1-03 item-1-04"
+			"item-1-05 item-1-06 item-1-07 ."
+			"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+			"item-1-11 item-1-12 item-1-13 item-1-14"
+			"item-1-15 item-1-16 item-1-17 .";
+	}
+	.ge-g2 {
+		grid-template-rows: auto repeat(2, 150px) auto repeat(1, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+			"item-2-01 item-2-02 item-2-03 item-2-04"
+			"item-2-05 item-2-06 . ."
+			"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+			"item-2-11 item-2-12 item-2-13 .";
+	}
+	.ge-g3 {
+		grid-template-rows: auto repeat(2, 150px) auto repeat(1, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+			"item-3-01 item-3-02 item-3-03 item-3-04"
+			"item-3-05 item-3-06 . ."
+			"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+			"item-3-11 item-3-12 item-3-13 .";
+	}
+	.ge-g4 {
+		grid-template-rows: auto repeat(2, 150px) auto repeat(2, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+			"item-4-01 item-4-02 item-4-03 item-4-04"
+			"item-4-05 item-4-06 item-4-07 ."
+			"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+			"item-4-11 item-4-12 item-4-13 item-4-14"
+			"item-4-15 item-4-16 item-4-17 .";
+	}
+	.ge-g5 {
+		grid-template-rows: auto repeat(2, 150px) auto repeat(2, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1 ge-hdr1 ge-hdr1"
+			"item-5-01 item-5-02 item-5-03 item-5-04"
+			"item-5-05 item-5-06 item-5-07 ."
+			"ge-hdr2 ge-hdr2 ge-hdr2 ge-hdr2"
+			"item-5-11 item-5-12 item-5-13 item-5-14"
+			"item-5-15 item-5-16 item-5-17 .";
+	}
+}
+
+@media screen and (max-width: 830px) {
+	.ge-g0 {
+		grid-template-rows: auto repeat(4, 150px) auto repeat(3, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1"
+			"item-0-01 item-0-02"
+			"item-0-03 item-0-04"
+			"item-0-05 item-0-06"
+			"item-0-07 ."
+			"ge-hdr2 ge-hdr2"
+			"item-0-11 item-0-12"
+			"item-0-13 item-0-14"
+			"item-0-15 item-0-16";
+	}
+	.ge-g1 {
+		grid-template-rows: auto repeat(4, 150px) auto repeat(4, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1"
+			"item-1-01 item-1-02"
+			"item-1-03 item-1-04"
+			"item-1-05 item-1-06"
+			"item-1-07 ."
+			"ge-hdr2 ge-hdr2"
+			"item-1-11 item-1-12"
+			"item-1-13 item-1-14"
+			"item-1-15 item-1-16"
+			"item-1-17 .";
+	}
+	.ge-g2 {
+		grid-template-rows: auto repeat(3, 150px) auto repeat(2, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1"
+			"item-2-01 item-2-02"
+			"item-2-03 item-2-04"
+			"item-2-05 item-2-06"
+			"ge-hdr2 ge-hdr2"
+			"item-2-11 item-2-12"
+			"item-2-13 .";
+	}
+	.ge-g3 {
+		grid-template-rows: auto repeat(3, 150px) auto repeat(2, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1"
+			"item-3-01 item-3-02"
+			"item-3-03 item-3-04"
+			"item-3-05 item-3-06"
+			"ge-hdr2 ge-hdr2"
+			"item-3-11 item-3-12"
+			"item-3-13 .";
+	}
+	.ge-g4 {
+		grid-template-rows: auto repeat(4, 150px) auto repeat(4, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1"
+			"item-4-01 item-4-02"
+			"item-4-03 item-4-04"
+			"item-4-05 item-4-06"
+			"item-4-07 ."
+			"ge-hdr2 ge-hdr2"
+			"item-4-11 item-4-12"
+			"item-4-13 item-4-14"
+			"item-4-15 item-4-16"
+			"item-4-17 .";
+	}
+	.ge-g5 {
+		grid-template-rows: auto repeat(4, 150px) auto repeat(4, 150px);
+		grid-template-areas:
+			"ge-hdr1 ge-hdr1"
+			"item-5-01 item-5-02"
+			"item-5-03 item-5-04"
+			"item-5-05 item-5-06"
+			"item-5-07 ."
+			"ge-hdr2 ge-hdr2"
+			"item-5-11 item-5-12"
+			"item-5-13 item-5-14"
+			"item-5-15 item-5-16"
+			"item-5-17 .";
+	}
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 5;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  transition-duration: .25s;
+  background-color: #fff;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 270px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #212121;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+  z-index: 4;
+}
+.menu__item {
+  display: block;
+  padding: 6px 12px;
+  color: #f3f3f3;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #323232;
+  color: #FF7F00;
+}
+.menu__item2 {
+  display: block;
+  padding: 6px 12px 6px 30px;
+  color: #f3f3f3;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item2:hover {
+  background-color: #323232;
+  color: #FF7F00;
+}
+.menu__header {
+  display: block;
+  padding: 6px 12px;
+  color: #f3f3f3;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+/* xxl */
+@media only screen (max-width: 1536px) {
+	.body__container {
+		max-width: 1280px;
+	}
+}
+
+/* xl */
+@media (max-width: 1280px) {
+	.body__container {
+		max-width: 1024px;
+	}
+}
+
+/* lg */
+@media (max-width: 1024px) {
+	.body__container {
+		max-width: 768px;
+	}
+}
+
+/* md */
+@media (max-width: 768px) {
+	.body__container {
+		max-width: 640px;
+	}
+}
+
+/* sm */
+@media (max-width: 640px) {
+	.body__container {
+		max-width: 480px;
+	}
+}
+
+/* xs */
+@media (max-width: 480px) {
+	.body__container {
+		max-width: 100%;
+	}
+}
