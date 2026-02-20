@@ -670,6 +670,7 @@ button {
 			"item-5-15 item-5-16"
 			"item-5-17 .";
 	}
+}
 #menu__toggle {
   opacity: 0;
 }
@@ -808,4 +809,5 @@ button {
 	.body__container {
 		max-width: 100%;
 	}
+
 }
