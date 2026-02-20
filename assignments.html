@@ -19,7 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="docs/assets/css/assignments.css">
 	</head>
 	<body>
-    <div class="body__container">
+		<div class="body__container">
 			<div class="hamburger-menu">
 			    <input id="menu__toggle" type="checkbox" />
 			    <label class="menu__btn" for="menu__toggle">
@@ -27,65 +27,89 @@
 			    </label>
 			
 			    <ul class="menu__box">
-					<li><a class="menu__item" href="https://awp-irl.github.io/td1-vendor-whisperer/">Home</a></li>
-					<li><a class="menu__item" href="#">Appearance vendor</a></li>
-					<li><a class="menu__item" href="#">Level 6: First Wave X-45</a></li>
-					<li><a class="menu__item" href="#">Level 26: Assault rifles</a></li>
-					<li><a class="menu__item" href="#">Level 29 vendors</a></li>
-					<li><a class="menu__item" href="#">Last Wave vendor reset</a></li>
-					<li><a class="menu__item" href="#">Premium vendor</a></li>
-					<li><a class="menu__item" href="#">Assignments</a></li>
+			    	<li><a class="menu__item" href="#">Home</a></li>
+					<li><span class="menu__header">Vendors</span></li>
+					<li><a class="menu__item2" href="#">Appearance</a></li>
+					<li><a class="menu__item2" href="#">Blueprint</a></li>
+					<li><a class="menu__item2" href="#">Level 6: First Wave X-45</a></li>
+					<li><a class="menu__item2" href="#">Level 26: Assault rifles</a></li>
+					<li><a class="menu__item2" href="#">Level 29</a></li>
+					<li><a class="menu__item2" href="#">Level 34</a></li>
+					<li><a class="menu__item2" href="#">Premium</a></li>
+					<li><a class="menu__item" href="assignments.html">Assignments</a></li>
 					<li><a class="menu__item" href="#">Dark Zone Blueprints</a></li>
+					<li><a class="menu__item" href="#">Equipment - Level 29</a></li>
+					<li><a class="menu__item" href="#">Global Events</a></li>
+					<li><a class="menu__item" href="#">Stat Calculator</a></li>
+					<li><a class="menu__item" href="#">Useful External Links</a></li>
 				</ul>
 			</div>
-  		<div class="fdiv">
-  			<h2>Daily Assignments - <span id="dacount">&nbsp;</span></h1>
-  			<ul>
-  				<li><span class="ttl">Combat:</span> 5 Skill Kills
-  				<li><span class="ttl">Crafting:</span> 5 Electronics Collected
-  				<li><span class="ttl">Dark Zone:</span> 10 Rioters Eliminated
-  				<li><span class="ttl">Survival:</span> 1 Survival Extraction Completed
-  			</ul>
-  			<p class="timer">Resets at <span id="dastamp">&nbsp;</span></p>
-  			<hr>
-  			<h2>Weekly Assignments - <span id="wacount">&nbsp;</span></h1>
-  			<ul>
-  				<li><span class="ttl">Weekly:</span>
-  					<ul>
-  						<li>50 Cleaners Eliminated
-  						<li>30 Fabric Collected
-  						<li>20 <span class="he">Elite</span> Enemies Eliminated
-  						<li>10 Missions Completed
-  					</ul>
-  				<li><span class="ttl">Survival:</span> 20000 Points earned in Survival
-  				<li><span class="ttl">Underground:</span>
-  					<ul>
-  						<li>6 Daily Underground Operations Completed
-  						<li>40 <span class="su">Veteran</span> Enemies Eliminated
-  						<li>1 3 Phase 5 Directive Hard Mission Completed
-  						<li>10 Phases Completed
-  					</ul>
-  			</ul>
-  			<p class="timer">Resets at <span id="wastamp">&nbsp;</span></p>
-  			<hr>
-  			<h2>Daily Missions - <span id="dmcount">&nbsp;</span></h1>
-  			<ul>
-  				<li>Amherst's Apartment: <span class="min">Hard</span>
-  				<li>Times Square Power Relay: <span class="min">Hard</span>
-  				<li>Lexington Event Center: <span class="he">Challenging</span>
-  			</ul>
-  			<p class="timer">Resets at <span id="dmstamp">&nbsp;</span></p>
-  			<hr>
-  			<h2>Incursions and Legendary Missions - <span id="legcount">&nbsp;</span></h1>
-  			<p class="timer">Resets at <span id="legstamp">&nbsp;</span></p>
-  			<hr>
-  			<h2>Weekly High Value Targets - <span id="hvtcount">&nbsp;</span></h1>
-  			<p class="timer">Resets at <span id="hvtstamp">&nbsp;</span></p>
-  			<hr>
-  			<h2>Season Pass supply drop - <span id='supcount'>&nbsp;</span></h1>
-  			<p class="timer">Resets at <span id='supstamp'>&nbsp;</span></p>
-  		</div>
-    </div>
+			<div class="fdiv">
+				<h2>Daily Assignments - <span id="dacount">&nbsp;</span></h2>
+				<ul>
+					<li><span class="ttl">Combat:</span> 1 <span class="he">Named Enemy</span> Eliminated</li>
+					<li><span class="ttl">Crafting:</span> 5 <span class="st">Standard</span> Items Crafted</li>
+					<li><span class="ttl">Dark Zone:</span> 10 Rioters Eliminated</li>
+					<li><span class="ttl">Survival:</span> 1 Survival Extraction Completed</li>
+				</ul>
+				<p class="timer">Resets at <span id="dastamp">&nbsp;</span></p>
+				<hr>
+				<h2>Weekly Assignments - <span id="wacount">&nbsp;</span></h2>
+				<ul>
+					<li><span class="ttl">Weekly:</span></li>
+						<ul>
+							<li>10 Named Enemies Eliminated</li>
+							<li>15 Crafting Materials Converted</li>
+							<li>50 Cleaners Eliminated</li>
+							<li>10 Missions Completed</li>
+						</ul>
+					<li><span class="ttl">Survival:</span> 20000 Points earned in Survival</li>
+					<li><span class="ttl">Underground:</span></li>
+						<ul>
+							<li>6 Daily Underground Operations Completed</li>
+							<li>40 Explosive Kills</li>
+							<li>1 3 Phase 5 Directive Hard Mission Completed</li>
+							<li>20 Directive Intel Collected</li>
+						</ul>
+				</ul>
+				<p class="timer">Resets at <span id="wastamp">&nbsp;</span></p>
+				<hr>
+				<h2>Daily Missions - <span id="dmcount">&nbsp;</span></h2>
+				<ul>
+					<li>Rooftop Comm Relay: <span class="min">Hard</span></li>
+					<li>Amherst's Apartment: <span class="min">Hard</span></li>
+					<li>Lexington Event Center: <span class="he">Challenging</span></li>
+				</ul>
+				<p class="timer">Resets at <span id="dmstamp">&nbsp;</span></p>
+				<hr>
+				<h2>Dark Zone Weekly Activities - <span id="dzwcount">&nbsp;</span></h2>
+				<ul>
+					<li>Extract High End Items</li>
+					<li>Kill Manhunt Rogues</li>
+					<li>Loot Locked Chests</li>
+					<li>Kill Elite Enemies</li>
+				</ul>
+				<p class="timer">Resets at <span id="dzwstamp">&nbsp;</span></p>
+				<hr>
+				<h2>Dark Zone SHD Elite (Monthly) Activities - <span id='dzmcount'>&nbsp;</span></h2>
+				<ul>
+					<li>Kill Named Enemies</li>
+					<li>Kill Elite Enemies</li>
+					<li>Kill Rogues</li>
+					<li>Kill Manhunt Rogues</li>
+				</ul>
+				<p class="timer">Resets at <span id='dzmstamp'>&nbsp;</span></p>
+				<hr>
+				<h2>Incursions and Legendary Missions - <span id="legcount">&nbsp;</span></h2>
+				<p class="timer">Resets at <span id="legstamp">&nbsp;</span></p>
+				<hr>
+				<h2>Weekly High Value Targets - <span id="hvtcount">&nbsp;</span></h2>
+				<p class="timer">Resets at <span id="hvtstamp">&nbsp;</span></p>
+				<hr>
+				<h2>Season Pass supply drop - <span id='supcount'>&nbsp;</span></h2>
+				<p class="timer">Resets at <span id='supstamp'>&nbsp;</span></p>
+			</div>
+		</div>
 		<script src="docs/assets/js/assignments.js"></script>
 	</body>
 </html>
