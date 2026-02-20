@@ -223,7 +223,21 @@ ul {
 }
 .menu__item2 {
   display: block;
-  padding: 6px 12px 6px 24px;
+  padding: 6px 12px 6px 30px;
+  color: #f3f3f3;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item2:hover {
+  background-color: #323232;
+  color: #FF7F00;
+}
+.menu__header {
+  display: block;
+  padding: 6px 12px;
   color: #f3f3f3;
   font-family: 'Lexend', sans-serif;
   font-size: 16px;
@@ -273,14 +287,3 @@ ul {
 		max-width: 100%;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
