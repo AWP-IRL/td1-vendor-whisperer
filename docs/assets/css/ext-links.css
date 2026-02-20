@@ -7,10 +7,10 @@ p {
 	font-size: 16px;
 	text-align:left;
 }
-a.bdy:link {
+a:link {
 	color: #b9b9b9;
 }
-a.bdy:visited {
+a:visited {
 	color: #b9b9b9;
 }
 h1 {
@@ -77,77 +77,6 @@ ul {
 .ttl {
 	color: #b7b7b7;
 }
-
-.container {
-	width: 128px;
-	height: 128px;
-	background-color: transparent;
-	position: relative;
-	margin: auto;
-}
-
-.bgdcircle {
-	width: 128px;
-	height: 128px;
-	background-color: #EECD0B;
-	position: absolute;
-	z-index: 1;
-	border-radius: 50%;
-	opacity: 0.2;
-}
-
-.cart {
-	width: 128px;
-	height: 128px;
-	background-color: #EECD0B;
-	position: absolute;
-	z-index: 2;
-	clip-path: polygon(14px 16px, 24px 16px, 30px 38px, 113px 38px, 101px 88px, 32px 88px);
-}
-
-.bskt {
-	width: 128px;
-	height: 128px;
-	background-color: #000;
-	position: absolute;
-	z-index: 3;
-	clip-path: polygon(34px 50px, 98px 50px, 92px 78px, 41px 78px);
-	opacity: 0.6;
-}
-
-.wheel1 {
-	width: 24px;
-	height: 24px;
-	background-color: #EECD0B;
-	position: absolute;
-	z-index: 3;
-	border-radius: 50%;
-	left: 31px;
-	top: 96px;
-}
-
-.wheel2 {
-	width: 24px;
-	height: 24px;
-	background-color: #EECD0B;
-	position: absolute;
-	z-index: 3;
-	border-radius: 50%;
-	left: 78px;
-	top: 96px;
-}
-
-.logo {
-	float: left;
-	padding: 5px;
-}
-
-.textbox {
-	float: left;
-	padding: 5px;
-	flex-grow: 100;
-}
-
 #menu__toggle {
   opacity: 0;
 }
@@ -286,4 +215,5 @@ ul {
 	.body__container {
 		max-width: 100%;
 	}
+
 }
