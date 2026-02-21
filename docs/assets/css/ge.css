@@ -730,6 +730,12 @@ button {
   transition-duration: .25s;
   z-index: 4;
 }
+.menu__box a:link {
+	color: #b9b9b9;
+}
+.menu_box a:visited {
+	color: #b9b9b9;
+}
 .menu__item {
   display: block;
   padding: 6px 12px;
@@ -821,6 +827,7 @@ button {
 	}
 
 }
+
 
 
 
