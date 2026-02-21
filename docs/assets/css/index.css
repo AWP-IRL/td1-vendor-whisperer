@@ -83,7 +83,7 @@ ul {
 	height: 128px;
 	background-color: transparent;
 	position: relative;
-	margin: auto;
+	margin: 0 auto auto;
 }
 
 .bgdcircle {
@@ -313,6 +313,7 @@ ul {
 	.body__container {
 		max-width: 100%;
 }
+
 
 
 
