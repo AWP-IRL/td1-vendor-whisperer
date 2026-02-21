@@ -265,6 +265,9 @@ ul {
 	.body__container {
 		max-width: 768px;
 	}
+	h1 {
+		font-size: 26px;
+	}
 }
 
 /* md */
@@ -287,3 +290,4 @@ ul {
 		max-width: 100%;
 	}
 }
+
