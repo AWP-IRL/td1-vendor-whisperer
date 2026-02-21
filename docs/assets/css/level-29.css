@@ -164,6 +164,77 @@ th {
 	margin: auto;
 	justify-content: center;
 }
+
+.menu-logo-container {
+	width: 32px;
+	height: 32px;
+	background-color: transparent;
+	position: relative;
+	margin: auto 0px auto;
+}
+.menu-logo-bgdcircle {
+	width: 128px;
+	height: 128px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 1;
+	border-radius: 50%;
+	opacity: 0.2;
+	zoom: 0.25;
+}
+.menu-logo-cart {
+	width: 128px;
+	height: 128px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 2;
+	clip-path: polygon(14px 16px, 24px 16px, 30px 38px, 113px 38px, 101px 88px, 32px 88px);
+	zoom: 0.25;
+}
+.menu-logo-bskt {
+	width: 128px;
+	height: 128px;
+	background-color: #000;
+	position: absolute;
+	z-index: 3;
+	clip-path: polygon(34px 50px, 98px 50px, 92px 78px, 41px 78px);
+	opacity: 0.6;
+	zoom: 0.25;
+}
+.menu-logo-wheel1 {
+	width: 24px;
+	height: 24px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 3;
+	border-radius: 50%;
+	left: 31px;
+	top: 96px;
+	zoom: 0.25;
+}
+.menu-logo-wheel2 {
+	width: 24px;
+	height: 24px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 3;
+	border-radius: 50%;
+	left: 78px;
+	top: 96px;
+	zoom: 0.25;
+}
+.menu-logo-text {
+	position: relative;
+	margin: auto 8px auto;
+	color: #ff7f00;
+}
+.menu-logo {
+	margin-left: 12px;
+	margin-top: 0px;
+	margin-bottom: 12px;
+	display: flex;
+	flex-direction: row;
+}
 #menu__toggle {
   opacity: 0;
 }
@@ -314,3 +385,4 @@ th {
 	}
 
 }
+
