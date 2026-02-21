@@ -730,12 +730,6 @@ button {
   transition-duration: .25s;
   z-index: 4;
 }
-.menu__box a:link {
-	color: #b9b9b9;
-}
-.menu_box a:visited {
-	color: #b9b9b9;
-}
 .menu__item {
   display: block;
   padding: 6px 12px;
@@ -784,6 +778,9 @@ button {
   text-decoration: none;
   transition-duration: .25s;
 }
+.menu__item a:link, .menu_item a:visited, .menu_item2 a:link, .menu_item2 a:visited {
+	color: #b9b9b9;
+}
 
 /* xxl */
 @media only screen (max-width: 1536px) {
@@ -827,6 +824,7 @@ button {
 	}
 
 }
+
 
 
 
