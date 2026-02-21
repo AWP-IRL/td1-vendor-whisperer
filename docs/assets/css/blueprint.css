@@ -231,7 +231,7 @@ th {
   width: 270px;
   height: 100%;
   margin: 0;
-  padding: 80px 0;
+  padding: 40px 0 80px;
   list-style: none;
   background-color: #212121;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
@@ -276,6 +276,16 @@ th {
   text-decoration: none;
   transition-duration: .25s;
 }
+.menu__title {
+  display: block;
+  padding: 6px 12px 18px;
+  color: #ff7f00;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition-duration: .25s;
+}
 
 /* xxl */
 @media only screen (max-width: 1536px) {
@@ -317,4 +327,5 @@ th {
 	.body__container {
 		max-width: 100%;
 	}
+
 }
