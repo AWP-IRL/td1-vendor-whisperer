@@ -252,7 +252,7 @@ ul {
   color: #ff7f00;
   font-family: 'Lexend', sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   text-decoration: none;
   transition-duration: .25s;
 }
@@ -336,6 +336,7 @@ ul {
 	.body__container {
 		max-width: 100%;
 }
+
 
 
 
