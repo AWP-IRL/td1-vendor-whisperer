@@ -778,7 +778,7 @@ button {
   text-decoration: none;
   transition-duration: .25s;
 }
-.menu__item a:link, .menu_item a:visited, .menu_item2 a:link, .menu_item2 a:visited {
+.menu__item a:link, .menu__item a:visited, .menu__item2 a:link, .menu__item2 a:visited {
 	color: #b9b9b9;
 }
 
@@ -824,6 +824,7 @@ button {
 	}
 
 }
+
 
 
 
