@@ -323,7 +323,7 @@ button {
 }
 .item-1-15 {
 	grid-area: item-1-15;
-	background-image: url('../../../docs/assets/images/ge/Strike-2-Shoes');
+	background-image: url('../../../docs/assets/images/ge/Strike-2-Shoes.png');
 }
 .item-1-16 {
 	grid-area: item-1-16;
@@ -821,5 +821,6 @@ button {
 	}
 
 }
+
 
 
