@@ -268,6 +268,9 @@ ul {
 	h1 {
 		font-size: 26px;
 	}
+	.logo {
+		scale: 0.8;
+	}
 }
 
 /* md */
@@ -277,6 +280,9 @@ ul {
 	}
 	h1 {
 		font-size: 22px;
+	}
+	.logo {
+		scale: 0.7;
 	}
 }
 
@@ -297,6 +303,9 @@ ul {
 	ul {
 		font-size: 12px;
 	}
+	.logo {
+		scale: 0.5;
+	}
 }
 
 /* xs */
@@ -304,6 +313,7 @@ ul {
 	.body__container {
 		max-width: 100%;
 }
+
 
 
 
