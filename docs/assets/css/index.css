@@ -269,7 +269,7 @@ ul {
 	h1 {
 		font-size: 26px;
 	}
-	.logo {
+	.container {
 		scale: 0.8;
 	}
 }
@@ -282,7 +282,7 @@ ul {
 	h1 {
 		font-size: 22px;
 	}
-	.logo {
+	.container {
 		scale: 0.7;
 	}
 }
@@ -304,7 +304,7 @@ ul {
 	ul {
 		font-size: 12px;
 	}
-	.logo {
+	.container {
 		scale: 0.5;
 	}
 }
@@ -314,6 +314,7 @@ ul {
 	.body__container {
 		max-width: 100%;
 }
+
 
 
 
