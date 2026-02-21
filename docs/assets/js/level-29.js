@@ -22,7 +22,7 @@ function getTimeZoneDisplayName(zoneNameFormat = "short") {
 		.find(part => part.type === "timeZoneName")['value'];
 }
 
-var dtmUTC = new Date("2/21/2026 0:00:00 UTC");
+var dtmUTC = new Date("2/28/2026 0:00:00 UTC");
 var msUTC = dtmUTC.getTime();
 var strCDLoc = '29count'
 countDownOut(msUTC, strCDLoc);
@@ -58,4 +58,5 @@ function countDownOut (toDate, toElement) {
 			}
 		}
 	, 1000);
+
 }
