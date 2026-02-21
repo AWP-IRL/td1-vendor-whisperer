@@ -272,6 +272,9 @@ ul {
 	.container {
 		scale: 0.8;
 	}
+	.bgdcircle, .cart, .bskt, .wheel1, .wheel2 {
+		zoom: 0.8;
+	}
 }
 
 /* md */
@@ -284,6 +287,9 @@ ul {
 	}
 	.container {
 		scale: 0.7;
+	}
+	.bgdcircle, .cart, .bskt, .wheel1, .wheel2 {
+		zoom: 0.7;
 	}
 }
 
@@ -307,6 +313,9 @@ ul {
 	.container {
 		scale: 0.5;
 	}
+	.bgdcircle, .cart, .bskt, .wheel1, .wheel2 {
+		zoom: 0.5;
+	}
 }
 
 /* xs */
@@ -314,6 +323,7 @@ ul {
 	.body__container {
 		max-width: 100%;
 }
+
 
 
 
