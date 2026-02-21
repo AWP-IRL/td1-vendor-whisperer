@@ -79,8 +79,8 @@ ul {
 }
 
 .container {
-	/*width: 128px;
-	height: 128px;*/
+	width: 128px;
+	/*height: 128px;*/
 	background-color: transparent;
 	position: relative;
 	margin: auto;
@@ -272,6 +272,9 @@ ul {
 	.bgdcircle, .cart, .bskt, .wheel1, .wheel2 {
 		zoom: 0.8;
 	}
+	.container {
+		width: 103px;
+	}
 }
 
 /* md */
@@ -284,6 +287,9 @@ ul {
 	}
 	.bgdcircle, .cart, .bskt, .wheel1, .wheel2 {
 		zoom: 0.7;
+	}
+	.container {
+		width: 90px;
 	}
 }
 
@@ -307,6 +313,9 @@ ul {
 	.bgdcircle, .cart, .bskt, .wheel1, .wheel2 {
 		zoom: 0.5;
 	}
+	.container {
+		width: 64px;
+	}
 }
 
 /* xs */
@@ -314,6 +323,7 @@ ul {
 	.body__container {
 		max-width: 100%;
 }
+
 
 
 
