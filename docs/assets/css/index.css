@@ -79,8 +79,8 @@ ul {
 }
 
 .container {
-	width: 128px;
-	height: 128px;
+	/*width: 128px;
+	height: 128px;*/
 	background-color: transparent;
 	position: relative;
 	margin: auto;
@@ -269,9 +269,6 @@ ul {
 	h1 {
 		font-size: 26px;
 	}
-	.container {
-		scale: 0.8;
-	}
 	.bgdcircle, .cart, .bskt, .wheel1, .wheel2 {
 		zoom: 0.8;
 	}
@@ -284,9 +281,6 @@ ul {
 	}
 	h1 {
 		font-size: 22px;
-	}
-	.container {
-		scale: 0.7;
 	}
 	.bgdcircle, .cart, .bskt, .wheel1, .wheel2 {
 		zoom: 0.7;
@@ -310,9 +304,6 @@ ul {
 	ul {
 		font-size: 12px;
 	}
-	.container {
-		scale: 0.5;
-	}
 	.bgdcircle, .cart, .bskt, .wheel1, .wheel2 {
 		zoom: 0.5;
 	}
@@ -323,6 +314,7 @@ ul {
 	.body__container {
 		max-width: 100%;
 }
+
 
 
 
