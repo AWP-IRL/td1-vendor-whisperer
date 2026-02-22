@@ -42,6 +42,71 @@ h2 {
 .su {
   color: #9b5a88;
 }
+.dz-list {		
+	display: flex;
+	flex-direction: row;
+	position:relative;
+	align-items: center;
+	bottom: -6px;
+}
+.dz-text {
+	padding-left: 4px;
+	height: 21px;
+	align-items: center;
+}
+.dz-leaderboard {
+	width: 21px;
+	height: 21px;
+	
+	mask-image:url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/ui_dz_leaderboard_spritesheet.png');
+	-webkit-mask-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/ui_dz_leaderboard_spritesheet.png');
+	
+	mask-size: 400%;
+	-webkit-mask-size: 400%;
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	margin-bottom: 2px;
+}
+.dzw-1 {
+	background-color: #9b5a88;
+	mask-position: -21px -21px;
+	-webkit-mask-position: -21px -21px;
+}
+.dzw-2 {
+	background-color: #fff;
+	mask-position: -42px -42px;
+	-webkit-mask-position: -42px -42px;
+}
+.dzw-3 {
+	background-color: #fff;
+	mask-position: -42px -21px;
+	-webkit-mask-position: -42px -21px;
+}
+.dzw-4 {
+	background-color: #fff;
+	mask-position: -42px 0px;
+	-webkit-mask-position: -42px 0px;
+}
+.dzm-1 {
+	background-color: #ffd500;
+	mask-position: -21px -42px;
+	-webkit-mask-position: -21px -42px;
+}
+.dzm-2 {
+	background-color: #e69f16;
+	mask-position: -21px -42px;
+	-webkit-mask-position: -21px -42px;
+}
+.dzm-3 {
+	background-color: #fff;
+	mask-position: 0px -21px;
+	-webkit-mask-position: 0px -21px;
+}
+.dzm-4 {
+	background-color: #fff;
+	mask-position: -63px -42px;
+	-webkit-mask-position: -63px -42px;
+}
 .title__container  {
   /*max-width: 80%;*/
   margin: auto;
