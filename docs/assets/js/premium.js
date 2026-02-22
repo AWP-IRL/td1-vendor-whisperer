@@ -1,4 +1,4 @@
-/*
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,7 +27,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-*/
+
 // Timestamp and countdown calculation
 function getTimeZoneDisplayName(zoneNameFormat = "short") {
 	let formatter = new Intl.DateTimeFormat(undefined, {
@@ -75,5 +75,6 @@ function countDownOut (toDate, toElement) {
 	, 1000);
 
 }
+
 
 
