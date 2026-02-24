@@ -15,7 +15,7 @@ t = new Date(timestamp.innerHTML);
 timestamp.innerHTML = "" + t.getFullYear() + '-' + ("0" + (t.getMonth() + 1)).slice(-2) + '-' + ("0" + t.getDate()).slice(-2) + ' ' + t.getHours() + ':' + ("0" + t.getMinutes()).slice(-2) + ' UTC' + t.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName("short") + ')';
 
 // Set the date we're counting down to
-var countDownDate = new Date("09/29/2025 8:00:00 UTC").getTime();
+var countDownDate = new Date("03/16/2026 8:00:00 UTC").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(
@@ -34,13 +34,14 @@ var x = setInterval(
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="gecount"
-		document.getElementById("gecount").innerHTML = 'Strike Global Event begins in ' + days + ":" + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
+		document.getElementById("gecount").innerHTML = 'Blackout Global Event begins in ' + days + ":" + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
 
 		// If the count down is over, write some text 
 		if (distance < 0) {
 			clearInterval(x);
-			document.getElementById("gecount").innerHTML = "Strike Global Event has begun";
+			document.getElementById("gecount").innerHTML = "Blackout Global Event has begun";
 		}
 	}
 , 1000);
+
 
