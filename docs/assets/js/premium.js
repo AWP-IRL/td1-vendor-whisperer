@@ -1,4 +1,4 @@
-
+/*
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,7 +27,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
+*/
 // Timestamp and countdown calculation
 function getTimeZoneDisplayName(zoneNameFormat = "short") {
 	let formatter = new Intl.DateTimeFormat(undefined, {
@@ -37,7 +37,7 @@ function getTimeZoneDisplayName(zoneNameFormat = "short") {
 		.find(part => part.type === "timeZoneName")['value'];
 }
 
-var dtmUTC = new Date("2/25/2026 0:00:00 UTC");
+var dtmUTC = new Date("2/26/2026 0:00:00 UTC");
 var msUTC = dtmUTC.getTime();
 var strCDLoc = 'premcount'
 countDownOut(msUTC, strCDLoc);
@@ -75,6 +75,7 @@ function countDownOut (toDate, toElement) {
 	, 1000);
 
 }
+
 
 
 
