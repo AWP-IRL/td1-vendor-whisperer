@@ -39,7 +39,7 @@ function countDownOut (toDate, toElement) {
 
 //Calling the countdown function
 //Daily Assignments
-var tSUTC = new Date("2/26/2026 0:00:00 UTC");
+var tSUTC = new Date("2/27/2026 0:00:00 UTC");
 var cDD1 = tSUTC.getTime();
 var cDEl1 = 'dacount'
 countDownOut(cDD1, cDEl1);
@@ -57,7 +57,7 @@ var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slic
 document.getElementById('wastamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
 
 //Daily Missions
-var tSUTC = new Date("2/26/2026 0:00:00 UTC");
+var tSUTC = new Date("2/27/2026 0:00:00 UTC");
 var cDD3 = tSUTC.getTime();
 var cDEl3 = "dmcount"
 countDownOut(cDD3, cDEl3);
