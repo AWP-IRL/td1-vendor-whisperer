@@ -27,7 +27,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
+*/
 // Timestamp and countdown calculation
 function getTimeZoneDisplayName(zoneNameFormat = "short") {
 	let formatter = new Intl.DateTimeFormat(undefined, {
@@ -36,7 +36,7 @@ function getTimeZoneDisplayName(zoneNameFormat = "short") {
 	return formatter.formatToParts(Date.now())
 		.find(part => part.type === "timeZoneName")['value'];
 }
-*/
+
 var dtmUTC = new Date("3/2/2026 0:00:00 UTC");
 var msUTC = dtmUTC.getTime();
 var strCDLoc = 'premcount'
@@ -75,6 +75,7 @@ function countDownOut (toDate, toElement) {
 	, 1000);
 
 }
+
 
 
 
