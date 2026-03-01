@@ -1,4 +1,4 @@
-
+/*
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -36,8 +36,8 @@ function getTimeZoneDisplayName(zoneNameFormat = "short") {
 	return formatter.formatToParts(Date.now())
 		.find(part => part.type === "timeZoneName")['value'];
 }
-
-var dtmUTC = new Date("3/1/2026 0:00:00 UTC");
+*/
+var dtmUTC = new Date("3/2/2026 0:00:00 UTC");
 var msUTC = dtmUTC.getTime();
 var strCDLoc = 'premcount'
 countDownOut(msUTC, strCDLoc);
@@ -75,6 +75,7 @@ function countDownOut (toDate, toElement) {
 	, 1000);
 
 }
+
 
 
 
