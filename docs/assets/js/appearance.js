@@ -36,7 +36,8 @@ function getTimeZoneDisplayName(zoneNameFormat = "short") {
 		.find(part => part.type === "timeZoneName")['value'];
 }
 
-var dtmUTC = new Date("3/8/2026 0:00:00 UTC");
+var strUTC = document.getElementById('appstamp').innerHTML;
+var dtmUTC = new Date(strUTC);
 var msUTC = dtmUTC.getTime();
 var strCDLoc = 'appcount'
 countDownOut(msUTC, strCDLoc);
