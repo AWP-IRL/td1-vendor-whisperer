@@ -22,7 +22,7 @@ function getTimeZoneDisplayName(zoneNameFormat = "short") {
 		.find(part => part.type === "timeZoneName")['value'];
 }
 
-var strUTC = document.getElementById('premstamp').innerHTML;
+var strUTC = document.getElementById('bpstamp').innerHTML;
 var dtmUTC = new Date(strUTC);
 var msUTC = dtmUTC.getTime();
 var strCDLoc = 'bpcount';
@@ -61,6 +61,7 @@ function countDownOut (toDate, toElement) {
 	, 1000);
 
 }
+
 
 
 
