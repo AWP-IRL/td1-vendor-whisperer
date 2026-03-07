@@ -39,7 +39,7 @@ function getTimeZoneDisplayName(zoneNameFormat = "short") {
 
 var strCDLoc = 'premcount'
 //var dtmUTC = new Date("3/8/2026 0:00:00 UTC");
-var dtmUTC = document.getElementById(strCDLoc).innerHTML
+var dtmUTC = document.getElementById('premstamp').innerHTML
 var msUTC = dtmUTC.getTime();
 countDownOut(msUTC, strCDLoc);
 var dtmUTCOut = '' + dtmUTC.getUTCFullYear() + '-' + ('0' + (dtmUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + dtmUTC.getUTCDate()).slice(-2) + ' ' + dtmUTC.getUTCHours() + ':' + ('0' + dtmUTC.getUTCMinutes()).slice(-2) + ' UTC'
@@ -76,3 +76,4 @@ function countDownOut (toDate, toElement) {
 	, 1000);
 
 }
+
