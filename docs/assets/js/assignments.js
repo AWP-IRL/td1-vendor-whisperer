@@ -39,52 +39,57 @@ function countDownOut (toDate, toElement) {
 
 //Calling the countdown function
 //Daily Assignments
-var tSUTC = new Date("3/8/2026 0:00:00 UTC");
+var strUTC = document.getElementById('dastamp').innerHTML;
+var tSUTC = new Date(strUTC);
 var cDD1 = tSUTC.getTime();
-var cDEl1 = 'dacount'
+var cDEl1 = 'dacount';
 countDownOut(cDD1, cDEl1);
 var tSUTCOut = '' + tSUTC.getUTCFullYear() + '-' + ('0' + (tSUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getUTCDate()).slice(-2) + ' ' + tSUTC.getUTCHours() + ':' + ('0' + tSUTC.getUTCMinutes()).slice(-2) + ' UTC'
 var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getDate()).slice(-2) + ' ' + tSUTC.getHours() + ':' + ('0' + tSUTC.getMinutes()).slice(-2) + ' UTC' + tSUTC.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
 document.getElementById('dastamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
 
 //Weekly Assignments
-var tSUTC = new Date("3/10/2026 0:00:00 UTC");
+var strUTC = document.getElementById('wastamp').innerHTML;
+var tSUTC = new Date(strUTC);
 var cDD2 = tSUTC.getTime();
-var cDEl2 = "wacount"
+var cDEl2 = "wacount";
 countDownOut(cDD2, cDEl2);
 var tSUTCOut = '' + tSUTC.getUTCFullYear() + '-' + ('0' + (tSUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getUTCDate()).slice(-2) + ' ' + tSUTC.getUTCHours() + ':' + ('0' + tSUTC.getUTCMinutes()).slice(-2) + ' UTC'
 var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getDate()).slice(-2) + ' ' + tSUTC.getHours() + ':' + ('0' + tSUTC.getMinutes()).slice(-2) + ' UTC' + tSUTC.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
 document.getElementById('wastamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
 
 //Daily Missions
-var tSUTC = new Date("3/8/2026 0:00:00 UTC");
+var strUTC = document.getElementById('dmstamp').innerHTML;
+var tSUTC = new Date(strUTC);
 var cDD3 = tSUTC.getTime();
-var cDEl3 = "dmcount"
+var cDEl3 = "dmcount";
 countDownOut(cDD3, cDEl3);
 var tSUTCOut = '' + tSUTC.getUTCFullYear() + '-' + ('0' + (tSUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getUTCDate()).slice(-2) + ' ' + tSUTC.getUTCHours() + ':' + ('0' + tSUTC.getUTCMinutes()).slice(-2) + ' UTC'
 var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getDate()).slice(-2) + ' ' + tSUTC.getHours() + ':' + ('0' + tSUTC.getMinutes()).slice(-2) + ' UTC' + tSUTC.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
 document.getElementById('dmstamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
 
 //Weekly DZ
-var tSUTC = new Date("3/8/2026 0:00:00 UTC");
+var strUTC = document.getElementById('dzwstamp').innerHTML;
+var tSUTC = new Date(strUTC);
 var cDD7 = tSUTC.getTime();
-var cDEl7 = "dzwcount"
+var cDEl7 = "dzwcount";
 countDownOut(cDD7, cDEl7);
 var tSUTCOut = '' + tSUTC.getUTCFullYear() + '-' + ('0' + (tSUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getUTCDate()).slice(-2) + ' ' + tSUTC.getUTCHours() + ':' + ('0' + tSUTC.getUTCMinutes()).slice(-2) + ' UTC'
 var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getDate()).slice(-2) + ' ' + tSUTC.getHours() + ':' + ('0' + tSUTC.getMinutes()).slice(-2) + ' UTC' + tSUTC.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
 document.getElementById('dzwstamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
 
 //Monthly DZ
-var tSUTC = new Date("4/1/2026 0:00:00 UTC");
+var strUTC = document.getElementById('dzmstamp').innerHTML;
+var tSUTC = new Date(strUTC);
 var cDD8 = tSUTC.getTime();
-var cDEl8 = "dzmcount"
+var cDEl8 = "dzmcount";
 countDownOut(cDD8, cDEl8);
 var tSUTCOut = '' + tSUTC.getUTCFullYear() + '-' + ('0' + (tSUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getUTCDate()).slice(-2) + ' ' + tSUTC.getUTCHours() + ':' + ('0' + tSUTC.getUTCMinutes()).slice(-2) + ' UTC'
 var tSUTZ = '' + tSUTC.getFullYear() + '-' + ('0' + (tSUTC.getMonth() + 1)).slice(-2) + '-' + ('0' + tSUTC.getDate()).slice(-2) + ' ' + tSUTC.getHours() + ':' + ('0' + tSUTC.getMinutes()).slice(-2) + ' UTC' + tSUTC.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
 document.getElementById('dzmstamp').innerHTML = tSUTCOut + ' / ' + tSUTZ;
 
 //Incursions and Legendary Missions
-let cDEl4 = "legcount"
+let cDEl4 = "legcount";
 let dtmUTCc2 = new Date();
 let intDWt2 = 6; //day of the week - target
 let intDWc2 = dtmUTCc2.getUTCDay(); //day of the week - current
@@ -104,7 +109,7 @@ let txtUTZn2 = '' + dtmUTCn2.getFullYear() + '-' + ('0' + (dtmUTCn2.getMonth() +
 document.getElementById('legstamp').innerHTML = txtUTCn2 + ' / ' + txtUTZn2;
 
 //Weekly High Value Targets
-let cDEl5 = "hvtcount"
+let cDEl5 = "hvtcount";
 let dtmUTCc1 = new Date();
 let intDWt1 = 5; //day of the week - target
 let intDWc1 = dtmUTCc1.getUTCDay(); //day of the week - current
