@@ -6,16 +6,17 @@ function getTimeZoneDisplayName(zoneNameFormat = "short") {
 		.find(part => part.type === "timeZoneName")['value'];
 }
 
-var timestamp = document.getElementById('ge1stamp'), 
-t = new Date(timestamp.innerHTML);
+var timestamp = document.getElementById('ge1stamp');
+var strCDD = timestamp.innerHTML;
+t = new Date(strCDD);
 timestamp.innerHTML = "" + t.getFullYear() + '-' + ("0" + (t.getMonth() + 1)).slice(-2) + '-' + ("0" + t.getDate()).slice(-2) + ' ' + t.getHours() + ':' + ("0" + t.getMinutes()).slice(-2) + ' UTC' + t.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName("short") + ')';
 
-var timestamp = document.getElementById('ge0stamp'), 
+var timestamp = document.getElementById('ge0stamp'); 
 t = new Date(timestamp.innerHTML);
 timestamp.innerHTML = "" + t.getFullYear() + '-' + ("0" + (t.getMonth() + 1)).slice(-2) + '-' + ("0" + t.getDate()).slice(-2) + ' ' + t.getHours() + ':' + ("0" + t.getMinutes()).slice(-2) + ' UTC' + t.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName("short") + ')';
 
 // Set the date we're counting down to
-var countDownDate = new Date("03/16/2026 8:00:00 UTC").getTime();
+var countDownDate = new Date(strCDD).getTime();
 
 // Update the count down every 1 second
 var x = setInterval(
@@ -43,5 +44,6 @@ var x = setInterval(
 		}
 	}
 , 1000);
+
 
 
