@@ -25,7 +25,7 @@ function getTimeZoneDisplayName(zoneNameFormat = "short") {
 var strUTC = document.getElementById('34stamp').innerHTML;
 var dtmUTC = new Date(strUTC);
 var msUTC = dtmUTC.getTime();
-var strCDLoc = '34count'
+var strCDLoc = '34count';
 countDownOut(msUTC, strCDLoc);
 var dtmUTCOut = '' + dtmUTC.getUTCFullYear() + '-' + ('0' + (dtmUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + dtmUTC.getUTCDate()).slice(-2) + ' ' + dtmUTC.getUTCHours() + ':' + ('0' + dtmUTC.getUTCMinutes()).slice(-2) + ' UTC'
 var strUTZOut = '' + dtmUTC.getFullYear() + '-' + ('0' + (dtmUTC.getMonth() + 1)).slice(-2) + '-' + ('0' + dtmUTC.getDate()).slice(-2) + ' ' + dtmUTC.getHours() + ':' + ('0' + dtmUTC.getMinutes()).slice(-2) + ' UTC' + dtmUTC.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
@@ -61,6 +61,3 @@ function countDownOut (toDate, toElement) {
 	, 1000);
 
 }
-
-
-
