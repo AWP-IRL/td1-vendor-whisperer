@@ -95,7 +95,7 @@ let intDWt2 = 6; //day of the week - target
 let intDWc2 = dtmUTCc2.getUTCDay(); //day of the week - current
 let intDist2; //distance from current to target
 if (intDWc2 >= intDWt2) {
-  intDist2 = 6 - intDWc2 + intDWt2;
+  intDist2 = 7 - intDWc2 + intDWt2;
 } else {
   intDist2 = intDWt2 - intDWc2;
 }
