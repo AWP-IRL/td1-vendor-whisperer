@@ -346,7 +346,7 @@ button {
 	padding-right: 5px;
 }
 .prim-img {
-	background-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/w-ar-lightweight-m4.png');
+	background-image: url('../../../docs/assets/images/icons/w-ar-lightweight-m4.png');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -354,7 +354,7 @@ button {
 	padding-right: 5px;
 }
 .sec-img {
-	background-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/w-ar-lvoa-c.png');
+	background-image: url('../../../docs/assets/images/icons/w-ar-lvoa-c.png');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -362,7 +362,7 @@ button {
 	padding-right: 5px;
 }
 .off-img {
-	background-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/w-sht-double-barrel-sawed-off.png');
+	background-image: url('../../../docs/assets/images/icons/w-sht-double-barrel-sawed-off.png');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -377,31 +377,31 @@ button {
 }
 .char-skill-1 {
 	grid-area: c-s-1;
-	background-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/csk-bfb.png');
+	background-image: url('../../../docs/assets/images/icons/csk-bfb.png');
 }
 .char-skill-sig {
 	grid-area: c-s-s;
-	background-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/csk-survivor-link.png');
+	background-image: url('../../../docs/assets/images/icons/csk-survivor-link.png');
 }
 .char-skill-2 {
 	grid-area: c-s-2;
-	background-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/csk-cluster.png');
+	background-image: url('../../../docs/assets/images/icons/csk-cluster.png');
 }
 .char-talent-1 {
 	grid-area: c-t-1;
-	background-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/ctal-shrapnel.png');
+	background-image: url('../../../docs/assets/images/icons/ctal-shrapnel.png');
 }
 .char-talent-2 {
 	grid-area: c-t-2;
-	background-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/ctal-demolition-expert.png');
+	background-image: url('../../../docs/assets/images/icons/ctal-demolition-expert.png');
 }
 .char-talent-3 {
 	grid-area: c-t-3;
-	background-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/ctal-death-by-proxy.png');
+	background-image: url('../../../docs/assets/images/icons/ctal-death-by-proxy.png');
 }
 .char-talent-4 {
 	grid-area: c-t-4;
-	background-image: url('https://awp-irl.github.io/td1-vendor-whisperer/docs/assets/images/icons/ctal-chain-reaction.png');
+	background-image: url('../../../docs/assets/images/icons/ctal-chain-reaction.png');
 }
 @media screen and (max-width: 830px) {
 	.h2-stat {
