@@ -68,24 +68,24 @@ h2 {
 	margin-bottom: 2px;
 }
 .dzw-1 {
-	background-color: #ffd500;
-	mask-position: -21px -42px;
-	-webkit-mask-position: -21px -42px;
+	background-color: #fff;
+	mask-position: 0px -21px;
+	-webkit-mask-position: 0px -21px;
 }
 .dzw-2 {
-	background-color: #e69f16;
-	mask-position: -63px 0px;
-	-webkit-mask-position: -63px 0px;
+	background-color: #ffd500;
+	mask-position: -42px 0px;
+	-webkit-mask-position: -42px 0px;
 }
 .dzw-3 {
 	background-color: #fff;
-	mask-position: -63px -21px;
-	-webkit-mask-position: -63px -21px;
+	mask-position: 0px -63px;
+	-webkit-mask-position: 0px -63px;
 }
 .dzw-4 {
-	background-color: #fff;
-	mask-position: 0px -42px;
-	-webkit-mask-position: 0px -42px;
+	background-color: #ffd500;
+	mask-position: -21px 0px;
+	-webkit-mask-position: -21px 0px;
 }
 .dzw-9 {
 	background-color: #fff;
