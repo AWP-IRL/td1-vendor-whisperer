@@ -1,33 +1,35 @@
-/*
-let slideIndex = 1;
-showSlides(slideIndex);
+// collapsible
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function () {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+			content.style.display = "none";
+		} else {
+			content.style.display = "block";
+		}
+	});
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// Calculate date to determine which bundle is the Item of the Day
+var varBEGutc = new Date("2026-02-19");
+var dtmNOWutc = new Date();
+var dtmBODutc = new Date(dtmNOWutc.setUTCHours(0,0,0,0));
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-	slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-	dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-*/
+var intIOTD = (((dtmBODutc - varBEGutc)/(1000*60*60*24)) % 17);
+var strIOTD = ("0" + intIOTD).slice(-2);
+var dtmNXTutc = new Date(dtmBODutc.setDate(dtmBODutc.getDate() + 1));
+var msUTC = dtmNXTutc.getTime();
+
+// Copy the bundle html to #iotd
+var strIOTDhdr = '<div class="premium-gallery" id="i-' + strIOTD + '">';
+var strIOTDhtml = document.getElementById('i-' + strIOTD).innerHTML;
+var strIOTDftr = '</div><div class="gallery-footer"><h2><span id="prem-countdown">&nbsp;</span></h2><p id="prem-next-p">at <span id="prem-next-date">&nbsp;</span></p></div>';
+document.getElementById('iotd').innerHTML = strIOTDhdr + strIOTDhtml + strIOTDftr;
+
 // Timestamp and countdown calculation
 function getTimeZoneDisplayName(zoneNameFormat = "short") {
 	let formatter = new Intl.DateTimeFormat(undefined, {
@@ -37,14 +39,11 @@ function getTimeZoneDisplayName(zoneNameFormat = "short") {
 		.find(part => part.type === "timeZoneName")['value'];
 }
 
-var strUTC = document.getElementById('premstamp').innerHTML;
-var dtmUTC = new Date(strUTC);
-var msUTC = dtmUTC.getTime();
-var strCDLoc = 'premcount';
+var strCDLoc = 'prem-countdown';
 countDownOut(msUTC, strCDLoc);
-var dtmUTCOut = '' + dtmUTC.getUTCFullYear() + '-' + ('0' + (dtmUTC.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + dtmUTC.getUTCDate()).slice(-2) + ' ' + dtmUTC.getUTCHours() + ':' + ('0' + dtmUTC.getUTCMinutes()).slice(-2) + ' UTC'
-var strUTZOut = '' + dtmUTC.getFullYear() + '-' + ('0' + (dtmUTC.getMonth() + 1)).slice(-2) + '-' + ('0' + dtmUTC.getDate()).slice(-2) + ' ' + dtmUTC.getHours() + ':' + ('0' + dtmUTC.getMinutes()).slice(-2) + ' UTC' + dtmUTC.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
-document.getElementById('premstamp').innerHTML = dtmUTCOut + ' / ' + strUTZOut;
+var dtmUTCOut = '' + dtmNXTutc.getUTCFullYear() + '-' + ('0' + (dtmNXTutc.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + dtmNXTutc.getUTCDate()).slice(-2) + ' ' + dtmNXTutc.getUTCHours() + ':' + ('0' + dtmNXTutc.getUTCMinutes()).slice(-2) + ' UTC'
+var strUTZOut = '' + dtmNXTutc.getFullYear() + '-' + ('0' + (dtmNXTutc.getMonth() + 1)).slice(-2) + '-' + ('0' + dtmNXTutc.getDate()).slice(-2) + ' ' + dtmNXTutc.getHours() + ':' + ('0' + dtmNXTutc.getMinutes()).slice(-2) + ' UTC' + dtmNXTutc.getTimezoneOffset() / -60 + ' (' + getTimeZoneDisplayName('short') + ')';
+document.getElementById('prem-next-date').innerHTML = dtmUTCOut + ' / ' + strUTZOut;
 
 // Function that updates the countdown
 function countDownOut (toDate, toElement) {
@@ -65,7 +64,7 @@ function countDownOut (toDate, toElement) {
 			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 			// Output the result in an element with id="dacount"
-			document.getElementById(toElement).innerHTML = 'Restock will occur in ' + days + ":" + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
+			document.getElementById(toElement).innerHTML = 'Deal ends in ' + days + ":" + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
 
 			// If the count down is over, write some text 
 			if (distance < 0) {
@@ -74,10 +73,4 @@ function countDownOut (toDate, toElement) {
 			}
 		}
 	, 1000);
-
 }
-
-
-
-
-
