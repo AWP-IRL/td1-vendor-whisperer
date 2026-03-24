@@ -40,7 +40,7 @@ var x = setInterval(
 		// If the count down is over, write some text 
 		if (distance < 0) {
 			clearInterval(x);
-			document.getElementById("gecount").innerHTML = "Blackout Global Event has begun";
+			document.getElementById("gecount").innerHTML = "Onslaught Global Event has begun";
 		}
 	}
 , 1000);
