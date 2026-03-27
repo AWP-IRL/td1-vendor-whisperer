@@ -15,7 +15,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 // Calculate date to determine which bundle is the Item of the Day
-var varBEGutc = new Date("2026-02-19");
+var varBEGutc = new Date("2026-02-20");
 var dtmNOWutc = new Date();
 var dtmBODutc = new Date(dtmNOWutc.setUTCHours(0,0,0,0));
 
