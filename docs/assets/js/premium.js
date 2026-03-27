@@ -15,11 +15,11 @@ for (i = 0; i < coll.length; i++) {
 }
 
 // Calculate date to determine which bundle is the Item of the Day
-var varBEGutc = new Date("2026-02-20");
+var varBEGutc = new Date("2026-02-18");
 var dtmNOWutc = new Date();
 var dtmBODutc = new Date(dtmNOWutc.setUTCHours(0,0,0,0));
 
-var intIOTD = (((dtmBODutc - varBEGutc)/(1000*60*60*24)) % 17);
+var intIOTD = (((dtmBODutc - varBEGutc)/(1000*60*60*24)) % 18);
 var strIOTD = ("0" + intIOTD).slice(-2);
 var dtmNXTutc = new Date(dtmBODutc.setDate(dtmBODutc.getDate() + 1));
 var msUTC = dtmNXTutc.getTime();
