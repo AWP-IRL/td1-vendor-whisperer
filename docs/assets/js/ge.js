@@ -36,7 +36,6 @@ function nextGEDate (dtmStart) {
 
 // Process dates in all .ge-next
 var geNexts = document.querySelectorAll(".ge-next");
-console.log(geNexts);
 geNexts.forEach((element) => {
 	var strGEStart = element.childNodes[2].innerHTML;
 	var dtmGEStart = new Date(strGEStart);
