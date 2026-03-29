@@ -381,7 +381,7 @@ button {
 }
 .char-skill-sig {
 	grid-area: c-s-s;
-	background-image: url('../../../docs/assets/images/icons/csk-signatur-survivor-link.png');
+	background-image: url('../../../docs/assets/images/icons/csk-signature-survivor-link.png');
 }
 .char-skill-2 {
 	grid-area: c-s-2;
