@@ -377,15 +377,15 @@ button {
 }
 .char-skill-1 {
 	grid-area: c-s-1;
-	background-image: url('../../../docs/assets/images/icons/csk-bfb.png');
+	background-image: url('../../../docs/assets/images/icons/csk-sticky-bomb-bfb.png');
 }
 .char-skill-sig {
 	grid-area: c-s-s;
-	background-image: url('../../../docs/assets/images/icons/csk-survivor-link.png');
+	background-image: url('../../../docs/assets/images/icons/csk-signatur-survivor-link.png');
 }
 .char-skill-2 {
 	grid-area: c-s-2;
-	background-image: url('../../../docs/assets/images/icons/csk-cluster.png');
+	background-image: url('../../../docs/assets/images/icons/csk-seeker-mine-cluster.png');
 }
 .char-talent-1 {
 	grid-area: c-t-1;
