@@ -99,6 +99,10 @@ button {
 .sp {
 	color: #5080FF;
 }
+.spb {
+	color: #5080FF;
+	background: rgba(67, 67, 67, 0.9);
+}
 .su {
 	color: #9b5a88;
 }
