@@ -93,21 +93,24 @@ button {
 .ttls {
 	color: #b7b7b7;
 }
-.he {
-	color: #e69f16;
-}
-.hebgd {
-	background-color: #e69f16;
-	color: #000000;
+.st {
+	color: #78C832;
 }
 .sp {
 	color: #5572D4;
 }
-.st {
-	color: #78C832;
-}
 .su {
 	color: #9b5a88;
+}
+.he {
+	color: #e69f16;
+}
+.ex {
+	color: #cf5231;
+}
+.hebgd {
+	background-color: #e69f16;
+	color: #000000;
 }
 .fdiv {
 	max-width: 80%;
