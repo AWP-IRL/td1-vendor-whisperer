@@ -93,21 +93,24 @@ button {
 .ttls {
 	color: #b7b7b7;
 }
+.st {
+	color: #78C832;
+}
+.sp {
+	color: #5080FF;
+}
+.su {
+	color: #9b5a88;
+}
 .he {
 	color: #e69f16;
+}
+.ex {
+	color: #cf5231;
 }
 .hebgd {
 	background-color: #e69f16;
 	color: #000000;
-}
-.sp {
-	color: #5572D4;
-}
-.st {
-	color: #78C832;
-}
-.su {
-	color: #9b5a88;
 }
 .fdiv {
 	max-width: 80%;
@@ -272,7 +275,7 @@ button {
 .h2-weapon {
 	font-weight: normal;
 	margin: 0;
-	background: rgba(67, 67, 67, 0.9);
+	background: rgba(67, 67, 67, 0.75);
 }
 .h2-detail {
 	display: block;
