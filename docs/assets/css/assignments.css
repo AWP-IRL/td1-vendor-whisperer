@@ -68,24 +68,24 @@ h2 {
 	margin-bottom: 2px;
 }
 .dzw-1 {
-	background-color: #e69f16;
+	background-color: #9b5a88;
 	mask-position: -21px -21px;
 	-webkit-mask-position: -21px -21px;
 }
 .dzw-2 {
 	background-color: #fff;
-	mask-position: -63px -42px;
-	-webkit-mask-position: -63px -42px;
+	mask-position: -42px -42px;
+	-webkit-mask-position: -42px -42px;
 }
 .dzw-3 {
 	background-color: #fff;
-	mask-position: -63px -21px;
-	-webkit-mask-position: -63px -21px;
+	mask-position: -42px -21px;
+	-webkit-mask-position: -42px -21px;
 }
 .dzw-4 {
-	background-color: #e69f16;
-	mask-position: 0px -42px;
-	-webkit-mask-position: 0px -42px;
+	background-color: #fff;
+	mask-position: -42px 0px;
+	-webkit-mask-position: -42px 0px;
 }
 .dzw-9 {
 	background-color: #fff;
@@ -99,13 +99,13 @@ h2 {
 }
 .dzm-2 {
 	background-color: #ffd500;
-	mask-position: 0px -42px;
-	-webkit-mask-position: 0px -42px;
+	mask-position: -21px -42px;
+	-webkit-mask-position: -21px -42px;
 }
 .dzm-3 {
 	background-color: #e69f16;
-	mask-position: 0px -42px;
-	-webkit-mask-position: 0px -42px;
+	mask-position: -21px -42px;
+	-webkit-mask-position: -21px -42px;
 }
 .dzm-4 {
 	background-color: #fff;
