@@ -1,0 +1,251 @@
+
+
+.menu-logo-container {
+	width: 32px;
+	height: 32px;
+	background-color: transparent;
+	position: relative;
+	margin: auto 0px auto;
+}
+
+.menu-logo-bgdcircle {
+	width: 128px;
+	height: 128px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 1;
+	border-radius: 50%;
+	opacity: 0.2;
+	zoom: 0.25;
+}
+
+.menu-logo-cart {
+	width: 128px;
+	height: 128px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 2;
+	clip-path: polygon(14px 16px, 24px 16px, 30px 38px, 113px 38px, 101px 88px, 32px 88px);
+	zoom: 0.25;
+}
+
+.menu-logo-bskt {
+	width: 128px;
+	height: 128px;
+	background-color: #000;
+	position: absolute;
+	z-index: 3;
+	clip-path: polygon(34px 50px, 98px 50px, 92px 78px, 41px 78px);
+	opacity: 0.6;
+	zoom: 0.25;
+}
+
+.menu-logo-wheel1 {
+	width: 24px;
+	height: 24px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 3;
+	border-radius: 50%;
+	left: 31px;
+	top: 96px;
+	zoom: 0.25;
+}
+
+.menu-logo-wheel2 {
+	width: 24px;
+	height: 24px;
+	background-color: #EECD0B;
+	position: absolute;
+	z-index: 3;
+	border-radius: 50%;
+	left: 78px;
+	top: 96px;
+	zoom: 0.25;
+}
+
+.menu-logo-text {
+	position: relative;
+	margin: auto 8px auto;
+	color: #ff7f00;
+}
+
+.menu-logo {
+	margin-left: 12px;
+	margin-top: 0px;
+	margin-bottom: 12px;
+	display: flex;
+	flex-direction: row;
+}
+
+.hamburger-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+ /*Menu functionality*/
+.menu-toggle {
+  /* ALWAYS KEEPING THE TOGGLE OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+	z-index: 5;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	opacity: 0;  
+}
+
+.menu-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.6rem;
+  /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-btn > div{
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 2px;
+    width: 60%;
+    transition: all 0.2s ease;
+}
+
+/* CREATING THE TOP AND BOTTOM LINES : 
+TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+
+.menu-btn > div::before,
+.menu-btn > div::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    background: #fff;
+    width: 100%;
+    height: 2px;
+    transition: all 0.2s ease;
+}
+
+.menu-btn > div::after{
+    top: 10px;
+}
+
+/* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+
+.menu-toggle:checked + .menu-btn > div{
+    background: rgba(0,0,0,0);
+}
+
+.menu-toggle:checked + .menu-btn > div::before{
+    top: 0;
+    transform: rotate(45deg);
+    background: #fff;
+}
+
+/* AND ROTATING THE TOP AND BOTTOM LINES :  */
+
+.menu-toggle:checked + .menu-btn > div::after{
+    top: 0;
+    transform: rotate(135deg);
+    background: #fff;
+}
+
+/* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
+
+.menu-box {
+    background-color: #212121;
+	top: 0;
+	left: 0;
+    width: 0%;
+    height: 100vh;  
+  /* APPLYING TRANSITION TO THE MENU :  */
+    transition: all 0.2s ease;
+}
+
+/* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
+
+.menu-toggle:checked ~ .menu-box{
+    width: 270px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+	position: fixed;
+    top: 45px;
+	/*padding: 0px 0 80px;*/
+	padding: 0;
+    list-style: none;
+	z-index: 4;
+  /* HIDDEN INITIALLY  :  */
+    visibility: hidden;
+    transition: visibility 0.1s ease;
+}
+
+.menu-list > li{
+    /*padding: 0.5rem;*/
+}
+
+/* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
+
+.menu-toggle:checked ~ .menu-box > div > .menu-list {
+    visibility: visible;
+}
+
+.menu-item {
+  display: block;
+  padding: 6px 12px;
+  color: #f3f3f3;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  background-color: #323232;
+  color: #FF7F00;
+}
+
+.menu-item2 {
+  display: block;
+  padding: 6px 12px 6px 30px;
+  color: #f3f3f3;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu-item2:hover {
+  background-color: #323232;
+  color: #FF7F00;
+}
+
+.menu-header {
+  display: block;
+  padding: 6px 12px;
+  color: #f3f3f3;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu-title {
+  display: block;
+  padding: 6px 12px 18px;
+  color: #ff7f00;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}

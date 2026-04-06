@@ -15,76 +15,82 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="docs/assets/css/menu.css">
 		<link rel="stylesheet" type="text/css" href="docs/assets/css/index.css">
 	</head>
 	<body>
-		<div class="body__container">
+		<div class="body-container">
 			<div class="hamburger-menu">
-			    <input id="menu__toggle" type="checkbox" />
-			    <label class="menu__btn" for="menu__toggle">
-			      <span></span>
-			    </label>
-			    <ul class="menu__box">
-			    	<li>
-						<div class="menu-logo">
-							<div class="menu-logo-container">
-								<div class="menu-logo-bgdcircle"></div>
-								<div class="menu-logo-cart"></div>
-								<div class="menu-logo-bskt"></div>
-								<div class="menu-logo-wheel1"></div>
-								<div class="menu-logo-wheel2"></div>
-							</div>
-							<div class="menu-logo-text">TD1 Vendor Whisperer</div>
-						</div>
-					</li>
-			    	<li><a class="menu__item" href="index.html">Home</a></li>
-					<li><span class="menu__header">Vendors</span></li>
-					<li><a class="menu__item2" href="appearance.html">Appearance</a></li>
-					<li><a class="menu__item2" href="blueprint.html">Blueprint</a></li>
-					<li><a class="menu__item2" href="level-6.html">Level 6: First Wave X-45</a></li>
-					<li><a class="menu__item2" href="level-26.html">Level 26: Assault rifles</a></li>
-					<li><a class="menu__item2" href="level-29.html">Level 29</a></li>
-					<li><a class="menu__item2" href="level-34.html">Level 34</a></li>
-					<li><a class="menu__item2" href="premium.html">Premium</a></li>
-					<li><a class="menu__item" href="assignments.html">Assignments</a></li>
-					<li><a class="menu__item" href="dz-blueprints.html">Dark Zone Blueprints</a></li>
-					<li><a class="menu__item" href="equipment-29.html">Equipment - Level 29</a></li>
-					<li><a class="menu__item" href="ge.html">Global Events</a></li>
-					<li><a class="menu__item" href="stat-calc.html">Stat Calculator</a></li>
-					<li><a class="menu__item" href="ext-links.html">Useful External Links</a></li>
-				</ul>
-			</div>
-			<div class="title__container">
-				<div class="logo">
-					<div class="container">
-						<div class="bgdcircle"></div>
-						<div class="cart"></div>
-						<div class="bskt"></div>
-						<div class="wheel1"></div>
-						<div class="wheel2"></div>
+			    <input type="checkbox" class="menu-toggle" />
+				<div class="menu-btn"><div></div></div>
+				<div class="menu-box">
+					<div>
+						<ul class="menu-list">
+							<li>
+								<div class="menu-logo">
+									<div class="menu-logo-container">
+										<div class="menu-logo-bgdcircle"></div>
+										<div class="menu-logo-cart"></div>
+										<div class="menu-logo-bskt"></div>
+										<div class="menu-logo-wheel1"></div>
+										<div class="menu-logo-wheel2"></div>
+									</div>
+									<div class="menu-logo-text">TD1 Vendor Whisperer</div>
+								</div>
+							</li>
+							<li><a class="menu-item" href="index.html">Home</a></li>
+							<li><span class="menu-header">Vendors</span></li>
+							<li><a class="menu-item2" href="appearance.html">Appearance</a></li>
+							<li><a class="menu-item2" href="blueprint.html">Blueprint</a></li>
+							<li><a class="menu-item2" href="level-6.html">Level 6: First Wave X-45</a></li>
+							<li><a class="menu-item2" href="level-26.html">Level 26: Assault rifles</a></li>
+							<li><a class="menu-item2" href="level-29.html">Level 29</a></li>
+							<li><a class="menu-item2" href="level-34.html">Level 34</a></li>
+							<li><a class="menu-item2" href="premium.html">Premium</a></li>
+							<li><a class="menu-item" href="assignments.html">Assignments</a></li>
+							<li><a class="menu-item" href="dz-blueprints.html">Dark Zone Blueprints</a></li>
+							<li><a class="menu-item" href="equipment-29.html">Equipment - Level 29</a></li>
+							<li><a class="menu-item" href="ge.html">Global Events</a></li>
+							<li><a class="menu-item" href="stat-calc.html">Stat Calculator</a></li>
+							<li><a class="menu-item" href="ext-links.html">Useful External Links</a></li>
+						</ul>
 					</div>
 				</div>
-			<div class="textbox">
-				<h1>Welcome to the Division 1 Vendor Whisperer</h1>
-				<p>Your source for up-to-date vendor information, collected from in-game values.</p>
 			</div>
-		</div>
-		<div class="fdiv2">
-			<hr>
-			<h2><span id="gecount">&nbsp;</span></h2>
-			<p style="margin-top:0px;"><span class="ttl">Starts:</span> 2026-04-13 8:00 UTC / <span id="ge1stamp">4/13/2026 8:00:00 UTC</span><br>
-			<span class="ttl">Ends:</span> 2026-04-20 8:00 UTC / <span id="ge0stamp">4/20/2025 8:00:00 UTC</span>.</p>
-			<p>Further details can be found on the <a class="bdy" href="ge.html#onslaught">Global Events</a> page</p>
-			<hr>
-			<h2>Latest updates</h2>
-			<ul>
-				<li>2026-03-29 - the <a class="bdy" href="ge.html">Global Events page</a> now includes the next date for each Global Event, will indicate confirmed or projected depending on the latest information available, and will indicate if a Global Event is currently active.</li>
-				<li>2026-03-14 - the <a class="bdy" href="premium.html">Premium vendor</a> has been reworked and now includes all available bundles with images, in addition to the Item of the Day</li>
-				<li>2026-02-20 - the site has been successfully migrated to Github. Please update any favourites/bookmarks to point to this new site. The old site has been retired and only has a message pointing to this site.</li>
-			</ul>
-			<hr>
-			<h2>Recognition</h2>
-			<p style="margin-top:0px;">I'm afraid this list is too long and I would forget so many deserving people trying to do this from memory. There have been so many people that have passed along knowledge over the years. A big shoutout to the people over at the Division Community Discord server, especially the Admins and Moderators, many of whom are also connected to the The Division Vendors Discord server. Thank you to the volunteers on The Division Vendors server, your assistance is appreciated greatly by me and the community at large. If I've linked to your content in the <span class="ttl">Useful Links</span> section, I have certainly made use of them over the years, gleaned information from them for this site, and you deserve the praise for putting it out there for all of us. This site is intended as a tribute to this game and the community, and is an effort to pull together some of the information into a single location. If you feel slighted at all for not being properly recognized, do not hesistate to contact me on Discord, AWP_IRL.</p>
+			<div class="main-container">
+				<div class="title-container">
+					<div class="title-logo">
+						<div class="logo-container">
+							<div class="logo-bgdcircle"></div>
+							<div class="logo-cart"></div>
+							<div class="logo-bskt"></div>
+							<div class="logo-wheel1"></div>
+							<div class="logo-wheel2"></div>
+						</div>
+					</div>
+					<div class="title-textbox">
+						<h1>Welcome to the Division 1 Vendor Whisperer</h1>
+						<p>Your source for up-to-date vendor information, collected from in-game values.</p>
+					</div>
+				</div>
+				<div class="content-container">
+					<hr>
+					<h2><span id="gecount">&nbsp;</span></h2>
+					<p style="margin-top:0px;"><span class="ttl">Starts:</span> 2026-04-13 8:00 UTC / <span id="ge1stamp">4/13/2026 8:00:00 UTC</span><br>
+					<span class="ttl">Ends:</span> 2026-04-20 8:00 UTC / <span id="ge0stamp">4/20/2025 8:00:00 UTC</span>.</p>
+					<p>Further details can be found on the <a class="bdy" href="ge.html#onslaught">Global Events</a> page</p>
+					<hr>
+					<h2>Latest updates</h2>
+					<ul>
+						<li>2026-03-29 - the <a class="bdy" href="ge.html">Global Events page</a> now includes the next date for each Global Event, will indicate confirmed or projected depending on the latest information available, and will indicate if a Global Event is currently active.</li>
+						<li>2026-03-14 - the <a class="bdy" href="premium.html">Premium vendor</a> has been reworked and now includes all available bundles with images, in addition to the Item of the Day</li>
+						<li>2026-02-20 - the site has been successfully migrated to Github. Please update any favourites/bookmarks to point to this new site. The old site has been retired and only has a message pointing to this site.</li>
+					</ul>
+					<hr>
+					<h2>Recognition</h2>
+					<p style="margin-top:0px;">I'm afraid this list is too long and I would forget so many deserving people trying to do this from memory. There have been so many people that have passed along knowledge over the years. A big shoutout to the people over at the Division Community Discord server, especially the Admins and Moderators, many of whom are also connected to the The Division Vendors Discord server. Thank you to the volunteers on The Division Vendors server, your assistance is appreciated greatly by me and the community at large. If I've linked to your content in the <span class="ttl">Useful Links</span> section, I have certainly made use of them over the years, gleaned information from them for this site, and you deserve the praise for putting it out there for all of us. This site is intended as a tribute to this game and the community, and is an effort to pull together some of the information into a single location. If you feel slighted at all for not being properly recognized, do not hesistate to contact me on Discord, AWP_IRL.</p>
+				</div>
+			</div>
 		</div>
 		<script src="docs/assets/js/index.js"></script>
 	</body>
