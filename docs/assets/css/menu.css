@@ -117,7 +117,7 @@
     background: #fff;
     height: 2px;
     width: 60%;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
 /* CREATING THE TOP AND BOTTOM LINES : 
@@ -131,7 +131,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
     background: #fff;
     width: 100%;
     height: 2px;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
 .menu-btn > div::after{
@@ -167,7 +167,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
     width: 0%;
     height: 100vh;  
   /* APPLYING TRANSITION TO THE MENU :  */
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
 /* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
@@ -187,7 +187,6 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 	z-index: 4;
   /* HIDDEN INITIALLY  :  */
     visibility: hidden;
-    transition: visibility 0.1s ease;
 }
 
 .menu-list > li{
@@ -197,6 +196,8 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 /* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
 
 .menu-toggle:checked ~ .menu-box > div > .menu-list {
+    transition: visibility 0.4s ease;
+    transition-delay: 0.2s;
     visibility: visible;
 }
 
