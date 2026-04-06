@@ -20,9 +20,26 @@ h2 {
   padding-left: 0.5rem;
   padding-righ: 0.5rem;
 }
-.he {
+.st {
+  color: #78C832;
+}
+
+.sp {
+  color: #5572D4;
+}
+
+.su, .ve {
+  color: #9b5a88;
+}
+
+.he, .el {
   color: #e69f16;
 }
+
+.ne {
+  color: #ffd500;
+}
+
 .min {
   color: #F24241;
 }
@@ -32,15 +49,6 @@ h2 {
 }
 .ttl {
   color: #b7b7b7;
-}
-.sp {
-  color: #5572D4;
-}
-.st {
-  color: #78C832;
-}
-.su {
-  color: #9b5a88;
 }
 .dz-list {		
 	display: flex;
