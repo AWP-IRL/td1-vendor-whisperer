@@ -96,27 +96,27 @@ h2 {
 }
 
 .dzw-1 {
-	background-color: #9b5a88;
+	background-color: #fff;
 	mask-position: -21px -21px;
 	-webkit-mask-position: -21px -21px;
 }
 
 .dzw-2 {
 	background-color: #fff;
-	mask-position: -42px -42px;
-	-webkit-mask-position: -42px -42px;
+	mask-position: -63px -42px;
+	-webkit-mask-position: -63px -42px;
 }
 
 .dzw-3 {
 	background-color: #fff;
-	mask-position: -42px -21px;
-	-webkit-mask-position: -42px -21px;
+	mask-position: -63px 0px;
+	-webkit-mask-position: -63px 0px;
 }
 
 .dzw-4 {
 	background-color: #fff;
-	mask-position: -42px 0px;
-	-webkit-mask-position: -42px 0px;
+	mask-position: 0px 0px;
+	-webkit-mask-position: 0px 0px;
 }
 
 .dzw-9 {
