@@ -96,33 +96,33 @@ h2 {
 }
 
 .dzw-1 {
-	background-color: #fff;
-	mask-position: -21px -21px;
-	-webkit-mask-position: -21px -21px;
+	background-color: #ffd500;
+	mask-position: -21px -42px;
+	-webkit-mask-position: -21px -42px;
 }
 
 .dzw-2 {
-	background-color: #fff;
-	mask-position: -63px -42px;
-	-webkit-mask-position: -63px -42px;
+	background-color: #e69f16;
+	mask-position: -63px 0;
+	-webkit-mask-position: -63px 0px;
 }
 
 .dzw-3 {
-	background-color: #e69f16;
-	mask-position: -63px 0px;
-	-webkit-mask-position: -63px 0px;
+	background-color: #fff;
+	mask-position: -63px -21px;
+	-webkit-mask-position: -63px -21px;
 }
 
 .dzw-4 {
 	background-color: #fff;
-	mask-position: 0px 0px;
-	-webkit-mask-position: 0px 0px;
+	mask-position: 0px -42px;
+	-webkit-mask-position: 0px -42px;
 }
 
 .dzw-9 {
 	background-color: #fff;
-	mask-position: -21px -42px;
-	-webkit-mask-position: -21px -42px;
+	mask-position: -21px -21px;
+	-webkit-mask-position: -21px -21px;
 }
 
 .dzm-1 {
