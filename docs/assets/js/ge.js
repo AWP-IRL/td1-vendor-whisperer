@@ -45,8 +45,8 @@ geNexts.forEach((element) => {
 	dtmGEEnTm.setDate(dtmGEStTm.getUTCDate() + 7);
 	dtmGEEnd.setDate(dtmGEStTm.getUTCDate() + 7);
 	var dtmNOW = new Date();
-	//var dtmBOD = new Date(dtmNOW.setUTCHours(0,0,0,0));
-	var dtmBOD = dtmNow;
+	var dtmBOD = new Date(dtmNOW.setUTCHours(0,0,0,0));
+	//var dtmBOD = dtmNow;
 	if (dtmBOD > dtmGEEnTm) {
 		var dtmGEStartNext = nextGEDate(dtmGEStart);
 		const strGEStartNext = dtmGEStartNext.toLocaleString('en-US', { month: 'short' }) + " " + dtmGEStartNext.getDate() + ", " + dtmGEStartNext.getFullYear();
