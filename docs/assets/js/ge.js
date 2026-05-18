@@ -47,7 +47,7 @@ geNexts.forEach((element) => {
 	var dtmNOW = new Date();
 	//var dtmBOD = new Date(dtmNOW.setUTCHours(0,0,0,0));
 	var dtmBOD = dtmNow;
-	if (dtmBOD > dtmGEEnd) {
+	if (dtmBOD > dtmGEEnTm) {
 		var dtmGEStartNext = nextGEDate(dtmGEStart);
 		const strGEStartNext = dtmGEStartNext.toLocaleString('en-US', { month: 'short' }) + " " + dtmGEStartNext.getDate() + ", " + dtmGEStartNext.getFullYear();
 		var dtmGEEndNext = new Date(dtmGEStartNext);
@@ -56,7 +56,7 @@ geNexts.forEach((element) => {
 		element.childNodes[2].innerHTML = strGEStartNext;
 		element.childNodes[4].innerHTML = strGEEndNext;
 		element.childNodes[6].innerHTML = "(projected)";
-	} else if (dtmBOD >= dtmGEStart && dtmBOD <= dtmGEEnd) {
+	} else if (dtmBOD >= dtmGEStTm && dtmBOD <= dtmGEEnTm) {
 		element.childNodes[0].innerHTML = "Now: ";
 		element.attributes.class =  element.classList.add("ge-now");
 	} else {
