@@ -45,8 +45,8 @@ geNexts.forEach((element) => {
 	dtmGEEnTm.setDate(dtmGEStTm.getUTCDate() + 7);
 	dtmGEEnd.setDate(dtmGEStTm.getUTCDate() + 7);
 	var dtmNOW = new Date();
-	var dtmBOD0 = new Date();
-	var dtmBOD = new Date(dtmBOD0.setUTCHours(0,0,0,0));
+	var dtmBOD = new Date();
+	var dtmBOD = new Date(dtmBOD.setUTCHours(0,0,0,0));
 	console.log(dtmGEStart);
 	console.log(dtmGEStTm);
 	console.log(dtmGEEnd);
