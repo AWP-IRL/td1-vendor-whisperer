@@ -46,6 +46,12 @@ geNexts.forEach((element) => {
 	dtmGEEnd.setDate(dtmGEStTm.getUTCDate() + 7);
 	var dtmNOW = new Date();
 	var dtmBOD = new Date(dtmNOW.setUTCHours(0,0,0,0));
+	console.log(dtmGEStart);
+	console.log(dtmGEStTm);
+	console.log(dtmGEEnd);
+	console.log(dtmGEEnTm);
+	console.log(dtmNOW);
+	console.log(dtmBOD);
 	//var dtmBOD = dtmNow;
 	if (dtmNOW > dtmGEEnTm) {
 		var dtmGEStartNext = nextGEDate(dtmGEStart);
