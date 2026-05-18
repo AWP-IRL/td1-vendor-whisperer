@@ -39,10 +39,14 @@ var geNexts = document.querySelectorAll(".ge-next");
 geNexts.forEach((element) => {
 	var strGEStart = element.childNodes[2].innerHTML;
 	var dtmGEStart = new Date(strGEStart);
-	var dtmGEEnd = new Date(dtmGEStart);
-	dtmGEEnd.setDate(dtmGEStart.getUTCDate() + 7);
+	var dtmGEStTm = new Date(dtmGEStart.setUTCHours(8,0,0,0));
+	var dtmGEEnTm = new Date(dtmGEStTm);
+	var dtmGEEnd = new Date(dtmGEStTm);
+	dtmGEEnTm.setDate(dtmGEStTm.getUTCDate() + 7);
+	dtmGEEnd.setDate(dtmGEStTm.getUTCDate() + 7);
 	var dtmNOW = new Date();
-	var dtmBOD = new Date(dtmNOW.setUTCHours(0,0,0,0));
+	//var dtmBOD = new Date(dtmNOW.setUTCHours(0,0,0,0));
+	var dtmBOD = dtmNow;
 	if (dtmBOD > dtmGEEnd) {
 		var dtmGEStartNext = nextGEDate(dtmGEStart);
 		const strGEStartNext = dtmGEStartNext.toLocaleString('en-US', { month: 'short' }) + " " + dtmGEStartNext.getDate() + ", " + dtmGEStartNext.getFullYear();
