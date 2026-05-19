@@ -54,6 +54,7 @@ th {
 .p-help {
 	font-size: 12px;
 	font-style: italic;
+	text-align: left;
 }
 
 .body-container {
