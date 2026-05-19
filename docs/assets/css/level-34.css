@@ -51,6 +51,11 @@ th {
 	color: #ff7f00;
 }
 
+.p-help {
+	font-size: 12px;
+	font-style: italic;
+}
+
 .body-container {
 	justify-content: center;
 }
