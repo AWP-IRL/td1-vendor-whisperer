@@ -1,3 +1,15 @@
+:root {
+	--col-or: #ff7f00;
+	--col-mn: #f24241;
+	--col-st: #78c832;
+	--col-sp: #5080ff;
+	--col-su: #af4296;
+	--col-he: #ffaf00;
+	--col-gs: #00ff90;
+	--col-ex: #ff6337;
+	--col-ne: #ffd500;
+}
+
 body {
   font-family: Lexend,Arial,Tahoma,Verdana,sans-serif;
   background-color: #000;
@@ -6,13 +18,13 @@ body {
 }
 
 h1 {
-  color: #ff7f00;
+  color: var(--col-or);
   font-size: 24px;
   text-align: center;
 }
 
 h2 {
-  color: #ff7f00;
+  color: var(--col-or);
   font-size: 18px;
 }
 
@@ -27,35 +39,35 @@ h2 {
 }
 
 .st {
-  color: #78c832;
+  color: var(--col-st);
 }
 
 .sp {
-  color: #5572d4;
+  color: var(--col-sp);
 }
 
 .su, .ve {
-  color: #9b5a88;
+  color: var(--col-su);
 }
 
 .he, .el, .ch {
-  color: #e69f16;
+  color: var(--col-he);
 }
 
 .cl, .gs {
-	color: #1dd074;
+	color: var(--col-gs);
 }
 
 .ex {
-	color: #cf5231;
+	color: var(--col-ex);
 }
 
 .min {
-  color: #F24241;
+  color: var(--col-mn);
 }
 
 .ne {
-  color: #ffd500;
+  color: var(--col-ne);
 }
 
 .timer {
@@ -96,7 +108,7 @@ h2 {
 }
 
 .dzw-1 {
-	background-color: #AF4296;
+	background-color: var(--col-su);
 	mask-position: -21px -21px;
 	-webkit-mask-position: -21px -21px;
 }
