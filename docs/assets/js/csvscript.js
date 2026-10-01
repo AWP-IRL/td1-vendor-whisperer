@@ -19,7 +19,7 @@ function csvToObjects(csv) {
   const csvRows = csv.split("\n");
   const propertyNames = csvSplit(csvRows[0]);
   //const propertyNames = csvRows[0];
-  let objects = [];
+  let tickers = [];
   for (let i = 1, max = csvRows.length; i < max; i++) {
     let thisObject = {};
     let row = csvSplit(csvRows[i]);
@@ -33,9 +33,9 @@ function csvToObjects(csv) {
       //   thisObject[propertyNames[j]] = row[j];
       // }
     }
-    objects.push(thisObject);
+    tickers.push(thisObject);
   }
-  return objects;
+  return tickers;
 }
 //  localStorage.setItem("tickers", JSON.stringify(objects));
 //  var storedTickers = JSON.parse(localStorage.getItem("tickers"));
