@@ -10,6 +10,7 @@
 	--col-ve: #af4296;
 	--col-el: #ffaf00;
 	--col-ne: #ffd500;
+	--dz-kmr: -63px -42px;
 }
 
 body {
@@ -159,8 +160,8 @@ h2 {
 
 .dzm-4 {
 	background-color: #fff;
-	mask-position: -63px -42px;
-	-webkit-mask-position: -63px -42px;
+	mask-position: var(--dz-kmr);
+	-webkit-mask-position: var(--dz-kmr);
 }
 
 .dzm-9 {
