@@ -34,7 +34,7 @@ function csvToObjects(csv) {
       // } else {
       //   thisObject[propertyNames[j]] = row[j];
       // }
-    }
+    //}
 //    tickers.push(thisObject);
 //  }
 //  return tickers;
