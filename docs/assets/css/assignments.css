@@ -121,8 +121,8 @@ h2 {
 
 .dzw-1 {
 	background-color: #fff;
-	mask-position: var(--col-exi);
-	-webkit-mask-position: var(--col-exi);
+	mask-position: var(--dz-exi);
+	-webkit-mask-position: var(--dz-exi);
 }
 
 .dzw-2 {
@@ -145,26 +145,26 @@ h2 {
 
 .dzw-9 {
 	background-color: #fff;
-	mask-position: var(--col-exi);
-	-webkit-mask-position: var(--col-exi);
+	mask-position: var(--dz-exi);
+	-webkit-mask-position: var(--dz-exi);
 }
 
 .dzm-1 {
 	background-color: var(--col-el);
-	mask-position: var(--col-exi);
-	-webkit-mask-position: var(--col-exi);
+	mask-position: var(--dz-exi);
+	-webkit-mask-position: var(--dz-exi);
 }
 
 .dzm-2 {
 	background-color: var(--col-ne);
-	mask-position: var(--col-ken);
-	-webkit-mask-position: var(--col-ken);
+	mask-position: var(--dz-ken);
+	-webkit-mask-position: var(--dz-ken);
 }
 
 .dzm-3 {
 	background-color: var(--col-el);
-	mask-position: var(--col-ken);
-	-webkit-mask-position: var(--col-ken);
+	mask-position: var(--dz-ken);
+	-webkit-mask-position: var(--dz-ken);
 }
 
 .dzm-4 {
@@ -175,8 +175,8 @@ h2 {
 
 .dzm-9 {
 	background-color: #fff;
-	mask-position: var(--col-exi);
-	-webkit-mask-position: var(--col-exi);
+	mask-position: var(--dz-exi);
+	-webkit-mask-position: var(--dz-exi);
 }
 
 /* xxl */
