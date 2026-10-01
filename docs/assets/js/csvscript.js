@@ -17,15 +17,17 @@ function handleResponse(csvText) {
 
 function csvToObjects(csv) {
   const csvRows = csv.split("\n");
-  const propertyNames = csvSplit(csvRows[0]);
-  //const propertyNames = csvRows[0];
-  let tickers = [];
-  for (let i = 1, max = csvRows.length; i < max; i++) {
-    let thisObject = {};
-    let row = csvSplit(csvRows[i]);
+  //const propertyNames = csvSplit(csvRows[0]);
+  const oneDimArray = rows.slice(1);
+  
+  console.log(oneDimArray);
+  //let tickers = [];
+  //for (let i = 1, max = csvRows.length; i < max; i++) {
+  //  let thisObject = {};
+//    let row = csvSplit(csvRows[i]);
     //let row = csvRows[i];
-    for (let j = 0, max = row.length; j < max; j++) {
-      thisObject[propertyNames[j]] = row[j];
+//    for (let j = 0, max = row.length; j < max; j++) {
+//      thisObject[propertyNames[j]] = row[j];
       // BELOW 4 LINES WILL CONVERT DATES IN THE "ENROLLED" COLUMN TO JS DATE OBJECTS
       // if (propertyNames[j] === "Enrolled") {
       //   thisObject[propertyNames[j]] = new Date(row[j]);
@@ -33,13 +35,13 @@ function csvToObjects(csv) {
       //   thisObject[propertyNames[j]] = row[j];
       // }
     }
-    tickers.push(thisObject);
-  }
-  return tickers;
+//    tickers.push(thisObject);
+//  }
+//  return tickers;
 }
 //  localStorage.setItem("tickers", JSON.stringify(objects));
 //  var storedTickers = JSON.parse(localStorage.getItem("tickers"));
 
-function csvSplit(row) {
-  return row.split("\t").map((val) => val.substring(1, val.length - 1));
-}
+//function csvSplit(row) {
+//  return row.split("\t").map((val) => val.substring(1, val.length - 1));
+//}
