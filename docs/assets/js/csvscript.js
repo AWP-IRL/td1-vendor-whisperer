@@ -1,7 +1,7 @@
 // sheetID you can find in the URL of your spreadsheet after "spreadsheet/d/"
-const sheetId = "12ywJEfevLPNQ-mY6Atl9K_Xl33P2H4BIjUVMbyAP0Ko";
+const sheetId = "1MEN7n9nDtQ4V7D9aSEHdozxyKLbMOV7Q7qlH1EG7JzU";
 // sheetName is the name of the TAB in your spreadsheet
-const sheetName = encodeURIComponent("L34");
+const sheetName = encodeURIComponent("finalList");
 const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&sheet=${sheetName}`;
 
 fetch(sheetURL)
