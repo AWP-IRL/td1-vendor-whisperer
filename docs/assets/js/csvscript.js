@@ -36,10 +36,10 @@ function csvToObjects(csv) {
     objects.push(thisObject);
   }
   return objects;
-  localStorage.setItem("tickers", JSON.stringify(objects));
-  var storedTickers = JSON.parse(localStorage.getItem("tickers"));
 }
+//  localStorage.setItem("tickers", JSON.stringify(objects));
+//  var storedTickers = JSON.parse(localStorage.getItem("tickers"));
 
 function csvSplit(row) {
-  return row.split(",").map((val) => val.substring(1, val.length - 1));
+  return row.split("\t").map((val) => val.substring(1, val.length - 1));
 }
