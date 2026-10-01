@@ -37,7 +37,7 @@ function csvToObjects(csv) {
   }
   return objects;
   localStorage.setItem("tickers", JSON.stringify(objects));
-  //var storedTickers = JSON.parse(localStorage.getItem("tickers"));
+  var storedTickers = JSON.parse(localStorage.getItem("tickers"));
 }
 
 function csvSplit(row) {
