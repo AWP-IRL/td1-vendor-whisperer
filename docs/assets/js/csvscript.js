@@ -19,8 +19,9 @@ function csvToObjects(csv) {
   const csvRows = csv.split("\n");
   //const propertyNames = csvSplit(csvRows[0]);
   const oneDimArray = rows.slice(1);
+  let string = JSON.string(oneDimArray);
+  localStorage.setItem("tickers", string);
   
-  console.log(oneDimArray);
   //let tickers = [];
   //for (let i = 1, max = csvRows.length; i < max; i++) {
   //  let thisObject = {};
