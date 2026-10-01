@@ -17,7 +17,8 @@ function handleResponse(csvText) {
 
 function csvToObjects(csv) {
   const csvRows = csv.split("\n");
-  const propertyNames = csvSplit(csvRows[0]);
+  //const propertyNames = csvSplit(csvRows[0]);
+  const propertyNames = csvRows[0];
   let objects = [];
   for (let i = 1, max = csvRows.length; i < max; i++) {
     let thisObject = {};
