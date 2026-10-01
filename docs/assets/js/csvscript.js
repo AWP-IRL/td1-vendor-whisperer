@@ -39,6 +39,5 @@ function csvToObjects(csv) {
 }
 
 function csvSplit(row) {
-  //return row.split(",").map((val) => val.substring(1, val.length - 1));
-  return row.split("\").map((val) => val.substring(1, val.length - 1));
+  return row.split(",").map((val) => val.substring(1, val.length - 1));
 }
