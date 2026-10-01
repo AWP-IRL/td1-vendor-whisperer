@@ -21,7 +21,8 @@ function csvToObjects(csv) {
   let objects = [];
   for (let i = 1, max = csvRows.length; i < max; i++) {
     let thisObject = {};
-    let row = csvSplit(csvRows[i]);
+    //let row = csvSplit(csvRows[i]);
+    let row = csvRows[i];
     for (let j = 0, max = row.length; j < max; j++) {
       thisObject[propertyNames[j]] = row[j];
       // BELOW 4 LINES WILL CONVERT DATES IN THE "ENROLLED" COLUMN TO JS DATE OBJECTS
