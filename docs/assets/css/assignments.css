@@ -10,7 +10,16 @@
 	--col-ve: #af4296;
 	--col-el: #ffaf00;
 	--col-ne: #ffd500;
+	--dz-krt: 0px 0px;
+	--dz-krk: -21px 0px;
+	--dz-kcl: -42px 0px;
+	--dz-klm: -63px 0px;
+	--dz-exi: -21px -21px;
+	--dz-lsd: -42px -21px;
+	--dz-llc: -63px -21px;
+	--dz-ken: -21px -42px;
 	--dz-kmr: -63px -42px;
+	--dz-ldt: 0px -63px;
 }
 
 body {
@@ -112,50 +121,50 @@ h2 {
 
 .dzw-1 {
 	background-color: #fff;
-	mask-position: -21px -21px;
-	-webkit-mask-position: -21px -21px;
+	mask-position: var(--col-exi);
+	-webkit-mask-position: var(--col-exi);
 }
 
 .dzw-2 {
 	background-color: #fff;
-	mask-position: -63px -42px;
-	-webkit-mask-position: -63px -42px;
+	mask-position: var(--dz-kmr);
+	-webkit-mask-position: var(--dz-kmr);
 }
 
 .dzw-3 {
 	background-color: var(--col-ne);
-	mask-position: -63px -0px;
-	-webkit-mask-position: -63px -0px;
+	mask-position: var(--dz-klm);
+	-webkit-mask-position: var(--dz-klm);
 }
 
 .dzw-4 {
 	background-color: #fff;
-	mask-position: -0px -0px;
-	-webkit-mask-position: -0px -0px;
+	mask-position: var(--dz-krt);
+	-webkit-mask-position: var(--dz-krt);
 }
 
 .dzw-9 {
 	background-color: #fff;
-	mask-position: -21px -21px;
-	-webkit-mask-position: -21px -21px;
+	mask-position: var(--col-exi);
+	-webkit-mask-position: var(--col-exi);
 }
 
 .dzm-1 {
 	background-color: var(--col-el);
-	mask-position: -21px -21px;
-	-webkit-mask-position: -21px -21px;
+	mask-position: var(--col-exi);
+	-webkit-mask-position: var(--col-exi);
 }
 
 .dzm-2 {
 	background-color: var(--col-ne);
-	mask-position: -21px -42px;
-	-webkit-mask-position: -21px -42px;
+	mask-position: var(--col-ken);
+	-webkit-mask-position: var(--col-ken);
 }
 
 .dzm-3 {
 	background-color: var(--col-el);
-	mask-position: -21px -42px;
-	-webkit-mask-position: -21px -42px;
+	mask-position: var(--col-ken);
+	-webkit-mask-position: var(--col-ken);
 }
 
 .dzm-4 {
@@ -166,8 +175,8 @@ h2 {
 
 .dzm-9 {
 	background-color: #fff;
-	mask-position: -21px -21px;
-	-webkit-mask-position: -21px -21px;
+	mask-position: var(--col-exi);
+	-webkit-mask-position: var(--col-exi);
 }
 
 /* xxl */
