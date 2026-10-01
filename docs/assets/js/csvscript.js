@@ -14,6 +14,6 @@ function handleResponse(csvText) {
 function csvToObjects(csv) {
   const csvRows = csv.split("\n");
   const oneDimArray = csvRows.slice(1);
-  let string = JSON.string(oneDimArray);
+  let string = JSON.stringify(oneDimArray);
   localStorage.setItem("tickers", string);
 }
