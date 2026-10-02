@@ -76,11 +76,6 @@ function myCatchAll() {
 
 //onload
 window.onload = myCatchAll();
-/*
+
 //auto-reload
-window.setTimeout(function(){
-	gSheetToArray();
-    var currentArray = [];
-	loadLines()
-}, 10000);
-*/
+window.setTimeout(gSheetToStorage(), 10000);
