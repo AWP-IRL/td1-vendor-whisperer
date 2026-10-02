@@ -20,7 +20,7 @@ function loadLines() {
     var linesArray = localStorage.getItem("tickerLines");
     var readArray = JSON.parse(linesArray);
 	currentArray = readArray;
-	console.log(currentArray);
+	//console.log(currentArray);
     if(linesArray===null){
         readArray = ["ERROR: no lines saved.","Please change the lines in tickerSet."]
     }
