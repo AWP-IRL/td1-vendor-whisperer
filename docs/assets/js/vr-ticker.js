@@ -32,7 +32,7 @@ function csvToObjects(csv) {
 
 function handleResponse(csvText) {
   let sheetObjects = csvToObjects(csvText);
-  console.log(sheetObjects);
+  //console.log(sheetObjects);
 }
 
 function csvToStorage() {
@@ -87,4 +87,4 @@ window.setTimeout(function(){
 	csvToStorage();
     var currentArray = [];
 	loadLines()
-}, 5000);
+}, 10000);
