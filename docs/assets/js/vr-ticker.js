@@ -31,7 +31,7 @@ function csvToObjects(csv) {
 
 function handleResponse(csvText) {
   let sheetObjects = csvToObjects(csvText);
-  console.log(sheetObjects);
+  //console.log(sheetObjects);
 }
 
 window.onload = function () {
