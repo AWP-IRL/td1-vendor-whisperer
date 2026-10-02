@@ -31,7 +31,7 @@ function csvToObjects(csv) {
 
 function handleResponse(csvText) {
   let sheetObjects = csvToObjects(csvText);
-  //console.log(sheetObjects);
+  console.log(sheetObjects);
 }
 
 window.onload = function () {
@@ -44,7 +44,7 @@ window.onload = function () {
     //load text
     var currentArray = [];
         loadLines();
-        console.log="Lines loaded";
+        console.log("Lines loaded");
 		
     //Begin display
     var list = document.getElementById('tickerContent').children;
@@ -56,7 +56,7 @@ window.onload = function () {
     if (list.length>=2){
         setInterval(changeBanner, 5000);
     }else{
-        console.log="No looping effect";
+        console.log("No looping effect");
     }
 };
 
@@ -77,5 +77,5 @@ loadLines = function () {
 //auto-reload
 window.setTimeout(function() {
 	loadLines();
-	console.log="Lines auto-reloaded";
+	console.log("Lines auto-reloaded");
 }, 5000);
