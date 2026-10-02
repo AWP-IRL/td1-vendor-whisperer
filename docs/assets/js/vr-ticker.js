@@ -52,11 +52,11 @@ function changeBanner() {
     ///Rotate through the list
     index = (index + 1) % list.length;
 }
-/*
+
 function myCatchAll() {
 
 	//csv to localStorage
-	csvToStorage();
+	gSheetToArray();
 	
     //load text
     var currentArray = [];
@@ -78,7 +78,7 @@ function myCatchAll() {
 
 //onload
 window.onload = myCatchAll();
-
+/*
 //auto-reload
 window.setTimeout(function(){
 	gSheetToArray();
@@ -86,5 +86,3 @@ window.setTimeout(function(){
 	loadLines()
 }, 10000);
 */
-
-window.onload = gSheetToArray();
