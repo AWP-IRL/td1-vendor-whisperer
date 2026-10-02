@@ -6,7 +6,7 @@ var index = 1;
 function csvToArray(csv) {
   const csvRows = csv.split("\n");
   const csvArray = csvRows.slice(1);
-  let string = JSON.stringify(csvArray);
+  //let string = JSON.stringify(csvArray);
   console.log(csvArray);
 }
 
@@ -21,6 +21,7 @@ function loadLines() {
 	var linesArray = csvArray;
     var readArray = JSON.parse(linesArray);
     currentArray = readArray;
+	console.log(currentArray);
     if(linesArray===null){
         readArray = ["ERROR: no lines saved.","Please change the lines in tickerSet."]
     }
