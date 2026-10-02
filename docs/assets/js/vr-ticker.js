@@ -34,7 +34,7 @@ function handleResponse(csvText) {
   //console.log(sheetObjects);
 }
 
-window.onload = function () {
+function myCatchAll() {
 
 	//fetch Google Sheet data
 	fetch(sheetURL)
@@ -58,9 +58,9 @@ window.onload = function () {
     }else{
         //console.log("No looping effect");
     }
-};
+}
 
-loadLines = function () {
+function loadLines() {
     var linesArray = localStorage.getItem("tickers");
     var readArray = JSON.parse(linesArray);
     currentArray = readArray;
@@ -74,6 +74,8 @@ loadLines = function () {
 	}
 }
 
+//onload
+window.onload = myCatchAll();
 
 //auto-reload
 window.setTimeout(loadLines(), 5000);
