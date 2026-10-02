@@ -31,7 +31,7 @@ function csvToObjects(csv) {
 
 function handleResponse(csvText) {
   let sheetObjects = csvToObjects(csvText);
-  console.log(sheetObjects);
+  //console.log(sheetObjects);
 }
 
 window.onload = function () {
@@ -44,19 +44,19 @@ window.onload = function () {
     //load text
     var currentArray = [];
         loadLines();
-        console.log("Lines loaded");
+        //console.log("Lines loaded");
 		
     //Begin display
     var list = document.getElementById('tickerContent').children;
     list[0].className = "showup";
     list[0].hidden = 0;
-    console.log="First line shown";
+    //console.log("First line shown");
 	
     //Rest of the rotation
     if (list.length>=2){
         setInterval(changeBanner, 5000);
     }else{
-        console.log("No looping effect");
+        //console.log("No looping effect");
     }
 };
 
@@ -73,9 +73,10 @@ loadLines = function () {
         area.innerHTML += "<p>" + readArray[i].replace(/\"/g, "") + "</p>";
     
 }
+
 }
 //auto-reload
 window.setTimeout(function() {
 	loadLines();
-	console.log("Lines auto-reloaded");
+	//console.log("Lines auto-reloaded");
 }, 5000);
