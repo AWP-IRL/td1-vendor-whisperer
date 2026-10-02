@@ -55,7 +55,7 @@ function changeBanner() {
 function myCatchAll() {
 	
 	//set auto-reload
-	setTimeout(gSheetToStorage, 10000);
+	setInterval(gSheetToStorage, 10000);
 
 	//gSheet to localStorage
 	gSheetToStorage();
