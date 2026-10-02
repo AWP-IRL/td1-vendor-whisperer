@@ -50,7 +50,7 @@ window.onload = function () {
     var list = document.getElementById('tickerContent').children;
     list[0].className = "showup";
     list[0].hidden = 0;
-    //console.log("First line shown");
+    ///console.log("First line shown");
 	
     //Rest of the rotation
     if (list.length>=2){
