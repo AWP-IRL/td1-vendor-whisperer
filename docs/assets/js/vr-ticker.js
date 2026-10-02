@@ -7,7 +7,7 @@ function csvToArray(csv) {
   const csvRows = csv.split("\n");
   const csvArray = csvRows.slice(1);
   //let string = JSON.stringify(csvArray);
-  console.log(csvArray);
+  //console.log(csvArray);
 }
 
 function gSheetToArray() {
