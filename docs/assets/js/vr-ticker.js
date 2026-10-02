@@ -34,6 +34,12 @@ function handleResponse(csvText) {
   console.log(sheetObjects);
 }
 
+function csvToStorage() {
+	fetch(sheetURL)
+	  .then((response) => response.text())
+	  .then((csvText) => handleResponse(csvText));
+}
+
 function loadLines() {
     var linesArray = localStorage.getItem("tickers");
     var readArray = JSON.parse(linesArray);
@@ -51,14 +57,12 @@ function loadLines() {
 
 function myCatchAll() {
 
-	//fetch Google Sheet data
-	fetch(sheetURL)
-	  .then((response) => response.text())
-	  .then((csvText) => handleResponse(csvText));
-	  
+	//csv to localStorage
+	csvToStorage();
+	
     //load text
     var currentArray = [];
-        loadLines();
+	loadLines();
 		
     //Begin display
     var list = document.getElementById('tickerContent').children;
@@ -78,4 +82,7 @@ function myCatchAll() {
 window.onload = myCatchAll();
 
 //auto-reload
-window.setTimeout(loadLines(), 5000);
+window.setTimeout(function(){
+	csvToStorage();
+	loadLines()
+}, 5000);
