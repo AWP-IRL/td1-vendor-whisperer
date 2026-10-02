@@ -85,5 +85,6 @@ window.onload = myCatchAll();
 //auto-reload
 window.setTimeout(function(){
 	csvToStorage();
+    var currentArray = [];
 	loadLines()
 }, 5000);
