@@ -3,28 +3,22 @@ const sheetName = encodeURIComponent("finalList");
 const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&sheet=${sheetName}`;
 var index = 1;
 
-function csvToObjects(csv) {
+function csvToArray(csv) {
   const csvRows = csv.split("\n");
-  const oneDimArray = csvRows.slice(1);
-  let string = JSON.stringify(oneDimArray);
-  //localStorage.setItem("tickers", string);
-  console.log(oneDimArray);
- // console.log("Items to localStorage");
+  const csvArray = csvRows.slice(1);
+  let string = JSON.stringify(csvArray);
+  console.log(csvArray);
 }
 
-function handleResponse(csvText) {
-  let sheetObjects = csvToObjects(csvText);
-  //console.log(sheetObjects);
-}
-
-function csvToStorage() {
+function gSheetToArray() {
 	fetch(sheetURL)
 	  .then((response) => response.text())
-	  .then((csvText) => handleResponse(csvText));
+	  .then((csvText) => csvToArray(csvText));
 }
-/*
+
 function loadLines() {
-    var linesArray = localStorage.getItem("tickers");
+    //var linesArray = localStorage.getItem("tickers");
+	var linesArray = csvArray;
     var readArray = JSON.parse(linesArray);
     currentArray = readArray;
     if(linesArray===null){
@@ -41,7 +35,8 @@ function loadLines() {
 ///Animate & change text
 function changeBanner() {
 	
-    if(currentArray !== JSON.parse(localStorage.getItem("tickers"))){
+    //if(currentArray !== JSON.parse(localStorage.getItem("tickers"))){
+    if(currentArray !== csvRows.slice(1)){
         loadLines();
     }
     var list = document.getElementById('tickerContent').children;
@@ -56,7 +51,7 @@ function changeBanner() {
     ///Rotate through the list
     index = (index + 1) % list.length;
 }
-
+/*
 function myCatchAll() {
 
 	//csv to localStorage
@@ -85,10 +80,10 @@ window.onload = myCatchAll();
 
 //auto-reload
 window.setTimeout(function(){
-	csvToStorage();
+	gSheetToArray();
     var currentArray = [];
 	loadLines()
 }, 10000);
 */
 
-window.onload = csvToStorage();
+window.onload = gSheetToArray();
