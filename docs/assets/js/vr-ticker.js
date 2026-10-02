@@ -34,6 +34,20 @@ function handleResponse(csvText) {
   //console.log(sheetObjects);
 }
 
+function loadLines() {
+    var linesArray = localStorage.getItem("tickers");
+    var readArray = JSON.parse(linesArray);
+    currentArray = readArray;
+    if(linesArray===null){
+        readArray = ["ERROR: no lines saved.","Please change the lines in tickerSet."]
+    }
+    var area = document.getElementById("tickerContent");
+    area.innerHTML = "";
+    for (var i = 0; i < readArray.length; i++) {
+        area.innerHTML += "<p>" + readArray[i].replace(/\"/g, "") + "</p>";    
+	}
+}
+
 function myCatchAll() {
 
 	//fetch Google Sheet data
@@ -58,20 +72,6 @@ function myCatchAll() {
     }else{
         //console.log("No looping effect");
     }
-}
-
-function loadLines() {
-    var linesArray = localStorage.getItem("tickers");
-    var readArray = JSON.parse(linesArray);
-    currentArray = readArray;
-    if(linesArray===null){
-        readArray = ["ERROR: no lines saved.","Please change the lines in tickerSet."]
-    }
-    var area = document.getElementById("tickerContent");
-    area.innerHTML = "";
-    for (var i = 0; i < readArray.length; i++) {
-        area.innerHTML += "<p>" + readArray[i].replace(/\"/g, "") + "</p>";    
-	}
 }
 
 //onload
