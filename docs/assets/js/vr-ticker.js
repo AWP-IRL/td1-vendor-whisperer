@@ -53,8 +53,11 @@ function changeBanner() {
 }
 
 function myCatchAll() {
+	
+	//set auto-reload
+	setTimeout(gSheetToStorage, 10000);
 
-	//csv to localStorage
+	//gSheet to localStorage
 	gSheetToStorage();
 	
     //load text
@@ -77,6 +80,3 @@ function myCatchAll() {
 
 //onload
 window.onload = myCatchAll();
-
-//auto-reload
-setTimeout(gSheetToStorage, 10000);
