@@ -70,8 +70,7 @@ loadLines = function () {
     var area = document.getElementById("tickerContent");
     area.innerHTML = "";
     for (var i = 0; i < readArray.length; i++) {
-        area.innerHTML += "<p>" + readArray[i].replace(/\"/g, "") + "</p>";
-    
+        area.innerHTML += "<p>" + readArray[i].replace(/\"/g, "") + "</p>";    
 }
 
 }
