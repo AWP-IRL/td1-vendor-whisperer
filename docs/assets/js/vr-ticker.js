@@ -3,24 +3,21 @@ const sheetName = encodeURIComponent("finalList");
 const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&sheet=${sheetName}`;
 var index = 1;
 
-function csvToArray(csv) {
+function csvToStorage(csv) {
   const csvRows = csv.split("\n");
   const csvArray = csvRows.slice(1);
-  //let string = JSON.stringify(csvArray);
+  localStorage.setItem("tickerLines", JSON.stringify(csvArray));
   //console.log(csvArray);
 }
 
-function gSheetToArray() {
+function gSheetToStorage() {
 	fetch(sheetURL)
 	  .then((response) => response.text())
-	  .then((csvText) => csvToArray(csvText));
+	  .then((csvText) => csvToStorage(csvText));
 }
 
 function loadLines() {
-    //var linesArray = localStorage.getItem("tickers");
-	//var linesArray = csvArray;
-    //var readArray = JSON.parse(linesArray);
-    currentArray = csvArray;
+    currentArray = JSON.parse(localStorage.getItem("tickerLines");
 	console.log(currentArray);
     if(currentArray===null){
         readArray = ["ERROR: no lines saved.","Please change the lines in tickerSet."]
@@ -36,8 +33,7 @@ function loadLines() {
 ///Animate & change text
 function changeBanner() {
 	
-    //if(currentArray !== JSON.parse(localStorage.getItem("tickers"))){
-    if(currentArray !== csvArray){
+    if(currentArray !== JSON.parse(localStorage.getItem("tickerLines"))){
         loadLines();
     }
     var list = document.getElementById('tickerContent').children;
@@ -56,7 +52,7 @@ function changeBanner() {
 function myCatchAll() {
 
 	//csv to localStorage
-	gSheetToArray();
+	gSheetToStorage();
 	
     //load text
     var currentArray = [];
