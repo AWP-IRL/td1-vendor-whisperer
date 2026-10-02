@@ -71,11 +71,9 @@ loadLines = function () {
     area.innerHTML = "";
     for (var i = 0; i < readArray.length; i++) {
         area.innerHTML += "<p>" + readArray[i].replace(/\"/g, "") + "</p>";    
+	}
 }
 
-}
+
 //auto-reload
-window.setTimeout(function() {
-	loadLines();
-	//console.log("Lines auto-reloaded");
-}, 5000);
+window.setTimeout(loadLines(), 5000);
