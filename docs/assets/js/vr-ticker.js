@@ -59,6 +59,7 @@ window.onload = function () {
         console.log="No looping effect";
     }
 };
+
 loadLines = function () {
     var linesArray = localStorage.getItem("tickers");
     var readArray = JSON.parse(linesArray);
@@ -73,7 +74,8 @@ loadLines = function () {
     
 }
 }
-///auto-reload
-/*window.setTimeout(function() {
-    window.location.href =  window.location.href;
-    }, 5000); */
+//auto-reload
+window.setTimeout(function() {
+	loadLines();
+	console.log="Lines auto-reloaded";
+}, 5000);
