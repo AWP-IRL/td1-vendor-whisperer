@@ -1,13 +1,11 @@
+const sheetId = "1MEN7n9nDtQ4V7D9aSEHdozxyKLbMOV7Q7qlH1EG7JzU";
+const sheetName = encodeURIComponent("finalList");
+const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&sheet=${sheetName}`;
 var index = 1;
+
 ///Animate & change text
 function changeBanner() {
-/*    titleLoop=[JSON.parse(localStorage.getItem("title"))];
-    if(JSON.parse(localStorage.getItem("title"))!== titleLoop){
-        var title = document.getElementById('tickerHeaderText').children;
-        title[0].textContent=titleLoop;
-        title[0].className="showup";
-       
-       };*/
+	
     if(currentArray !== JSON.parse(localStorage.getItem("tickers"))){
         loadLines();
     }
@@ -18,28 +16,43 @@ function changeBanner() {
         if (i == index) {
             list[i].className = "showup";
         }
-    }
-    );
+    });
+	
     ///Rotate through the list
     index = (index + 1) % list.length;
 }
+
+function csvToObjects(csv) {
+  const csvRows = csv.split("\n");
+  const oneDimArray = csvRows.slice(1);
+  let string = JSON.stringify(oneDimArray);
+  localStorage.setItem("tickers", string);
+}
+
+function handleResponse(csvText) {
+  let sheetObjects = csvToObjects(csvText);
+  console.log(sheetObjects);
+}
+
 window.onload = function () {
-    ///load title
-   /* var titleLoop=[];
-    var title = document.getElementById('tickerHeaderText').children;
-    title[0].className="showup";
-    titleLoop=[JSON.parse(localStorage.getItem("title"))];
-    title[0].textContent=titleLoop;*/
-    ///load text
+
+	//fetch Google Sheet data
+	fetch(sheetURL)
+	  .then((response) => response.text())
+	  .then((csvText) => handleResponse(csvText));
+	  
+    //load text
     var currentArray = [];
         loadLines();
         console.log="Lines loaded";
-    ///Begin display
+		
+    //Begin display
     var list = document.getElementById('tickerContent').children;
     list[0].className = "showup";
     list[0].hidden = 0;
     console.log="First line shown";
-    ///Rest of the rotation
+	
+    //Rest of the rotation
     if (list.length>=2){
         setInterval(changeBanner, 5000);
     }else{
