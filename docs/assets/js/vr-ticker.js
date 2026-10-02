@@ -79,4 +79,4 @@ function myCatchAll() {
 window.onload = myCatchAll();
 
 //auto-reload
-window.setTimeout(gSheetToStorage(), 10000);
+setTimeout(gSheetToStorage, 10000);
