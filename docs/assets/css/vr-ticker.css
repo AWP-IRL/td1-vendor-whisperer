@@ -21,12 +21,12 @@ body{
 #tickerHeader{
     padding: 5px 20px;
     font-weight: 700
-}
-#tickerContent{
-    padding: 5px 20px;
-    font-weight: 600
     background: #ff7f00;
 	color: white;
+}
+#tickerContent{
+    padding: 5px 20px 5px 0px;
+    font-weight: 600;
 }
 .tickerContentText{
     height:40px
