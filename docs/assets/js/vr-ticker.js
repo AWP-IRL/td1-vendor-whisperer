@@ -11,6 +11,7 @@ function csvToStorage(csv) {
 }
 
 function gSheetToStorage() {
+	console.log("gSheet to Storage");
 	fetch(sheetURL)
 	  .then((response) => response.text())
 	  .then((csvText) => csvToStorage(csvText));
