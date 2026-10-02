@@ -25,6 +25,8 @@ body{
 #tickerContent{
     padding: 5px 20px;
     font-weight: 600
+    background: #ff7f00;
+	color: white;
 }
 .tickerContentText{
     height:40px
