@@ -84,11 +84,11 @@ function myCatchAll() {
 window.onload = myCatchAll();
 
 //auto-reload
-/*window.setTimeout(function(){
+window.setTimeout(function(){
 	csvToStorage();
     var currentArray = [];
 	loadLines()
-}, 10000);*/
+}, 10000);
 */
 
 window.onload = csvToStorage();
