@@ -18,11 +18,11 @@ function gSheetToArray() {
 
 function loadLines() {
     //var linesArray = localStorage.getItem("tickers");
-	var linesArray = csvArray;
-    var readArray = JSON.parse(linesArray);
-    currentArray = readArray;
+	//var linesArray = csvArray;
+    //var readArray = JSON.parse(linesArray);
+    currentArray = csvArray;
 	console.log(currentArray);
-    if(linesArray===null){
+    if(currentArray===null){
         readArray = ["ERROR: no lines saved.","Please change the lines in tickerSet."]
     }
     var area = document.getElementById("tickerContent");
