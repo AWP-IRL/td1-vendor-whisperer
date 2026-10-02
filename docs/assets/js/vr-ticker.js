@@ -7,9 +7,9 @@ function csvToObjects(csv) {
   const csvRows = csv.split("\n");
   const oneDimArray = csvRows.slice(1);
   let string = JSON.stringify(oneDimArray);
-  localStorage.setItem("tickers", string);
+  //localStorage.setItem("tickers", string);
   console.log(oneDimArray);
-  console.log("Items to localStorage");
+ // console.log("Items to localStorage");
 }
 
 function handleResponse(csvText) {
@@ -22,7 +22,7 @@ function csvToStorage() {
 	  .then((response) => response.text())
 	  .then((csvText) => handleResponse(csvText));
 }
-
+/*
 function loadLines() {
     var linesArray = localStorage.getItem("tickers");
     var readArray = JSON.parse(linesArray);
@@ -89,3 +89,6 @@ window.onload = myCatchAll();
     var currentArray = [];
 	loadLines()
 }, 10000);*/
+*/
+
+window.onload = csvToStorage();
