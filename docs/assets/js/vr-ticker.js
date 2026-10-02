@@ -37,7 +37,7 @@ function loadLines() {
 function changeBanner() {
 	
     //if(currentArray !== JSON.parse(localStorage.getItem("tickers"))){
-    if(currentArray !== csvRows.slice(1)){
+    if(currentArray !== csvArray){
         loadLines();
     }
     var list = document.getElementById('tickerContent').children;
