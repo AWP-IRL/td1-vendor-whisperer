@@ -17,6 +17,7 @@
 	--dz-exi: -21px -21px;
 	--dz-lsd: -42px -21px;
 	--dz-llc: -63px -21px;
+	--dz-rog: 0px -42px;
 	--dz-ken: -21px -42px;
 	--dz-kmr: -63px -42px;
 	--dz-ldt: 0px -63px;
@@ -120,27 +121,27 @@ h2 {
 }
 
 .dzw-1 {
-	background-color: #fff;
-	mask-position: var(--dz-exi);
-	-webkit-mask-position: var(--dz-exi);
+	background-color: var(--col-ne);
+	mask-position: var(--dz-ken);
+	-webkit-mask-position: var(--dz-ken);
 }
 
 .dzw-2 {
-	background-color: #fff;
-	mask-position: var(--dz-kmr);
-	-webkit-mask-position: var(--dz-kmr);
-}
-
-.dzw-3 {
-	background-color: var(--col-ne);
+	background-color: var(--col-el);
 	mask-position: var(--dz-klm);
 	-webkit-mask-position: var(--dz-klm);
 }
 
+.dzw-3 {
+	background-color: #fff;
+	mask-position: var(--dz-llc);
+	-webkit-mask-position: var(--dz-llc);
+}
+
 .dzw-4 {
 	background-color: #fff;
-	mask-position: var(--dz-krt);
-	-webkit-mask-position: var(--dz-krt);
+	mask-position: var(--dz-hij);
+	-webkit-mask-position: var(--dz-hij);
 }
 
 .dzw-9 {
