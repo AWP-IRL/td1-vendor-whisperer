@@ -1,0 +1,614 @@
+[
+  {
+    "gType": "Backpack",
+    "gStat": "Armor",
+    "gPer": 15,
+    "gMax": 1334
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Main Stat",
+    "gPer": 7,
+    "gMax": 1401
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Critical Hit Chance",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Critical Hit Damage",
+    "gPer": 1,
+    "gMax": 9
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Enemy Armor Damage",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Health",
+    "gPer": 518,
+    "gMax": 13339
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Health on Kill",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Exotic Damage Reduction",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Skill Haste",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Skill Power",
+    "gPer": 518,
+    "gMax": 13339
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Stability",
+    "gPer": 1,
+    "gMax": 17.5
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Reload Speed",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Weapon Damage",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Ammo Capacity",
+    "gPer": 3,
+    "gMax": 56
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Damage to Elites",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "Increased Kill XP",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Backpack",
+    "gStat": "X Resistance",
+    "gPer": 1,
+    "gMax": 15
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Armor",
+    "gPer": 15,
+    "gMax": 2003
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Main Stat",
+    "gPer": 7,
+    "gMax": 1401
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Critical Hit Chance",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Critical Hit Damage",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Enemy Armor Damage",
+    "gPer": 0.5,
+    "gMax": 6
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Health",
+    "gPer": 648,
+    "gMax": 16674
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Health on Kill",
+    "gPer": 1,
+    "gMax": 5
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Exotic Damage Reduction",
+    "gPer": 0.5,
+    "gMax": 11
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Skill Haste",
+    "gPer": 1,
+    "gMax": 9
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Skill Power",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Stability",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Reload Speed",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Weapon Damage",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Ammo Capacity",
+    "gPer": 3,
+    "gMax": 56
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Damage to Elites",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "Increased Kill XP",
+    "gPer": 2,
+    "gMax": 28
+  },
+  {
+    "gType": "Body Armor",
+    "gStat": "X Resistance",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Armor",
+    "gPer": 12,
+    "gMax": 1001
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Main Stat",
+    "gPer": 7,
+    "gMax": 1401
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Critical Hit Chance",
+    "gPer": 0.5,
+    "gMax": 6
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Critical Hit Damage",
+    "gPer": 1,
+    "gMax": 17
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Enemy Armor Damage",
+    "gPer": 0.5,
+    "gMax": 8
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Health",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Health on Kill",
+    "gPer": 1,
+    "gMax": 5
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Exotic Damage Reduction",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Skill Haste",
+    "gPer": 1,
+    "gMax": 9
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Skill Power",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Stability",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Reload Speed",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Weapon Damage",
+    "gPer": 1,
+    "gMax": 12
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Ammo Capacity",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Damage to Elites",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "Increased Kill XP",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Gloves",
+    "gStat": "X Resistance",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Armor",
+    "gPer": 15,
+    "gMax": 2003
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Main Stat",
+    "gPer": 7,
+    "gMax": 1401
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Critical Hit Chance",
+    "gPer": 0.5,
+    "gMax": 4
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Critical Hit Damage",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Enemy Armor Damage",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Health",
+    "gPer": 324,
+    "gMax": 8337
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Health on Kill",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Exotic Damage Reduction",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Skill Haste",
+    "gPer": 1,
+    "gMax": 7
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Skill Power",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Stability",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Reload Speed",
+    "gPer": 1,
+    "gMax": 22
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Weapon Damage",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Ammo Capacity",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Damage to Elites",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "Increased Kill XP",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Holster",
+    "gStat": "X Resistance",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Armor",
+    "gPer": 19,
+    "gMax": 1668
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Main Stat",
+    "gPer": 7,
+    "gMax": 1401
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Critical Hit Chance",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Critical Hit Damage",
+    "gPer": 1,
+    "gMax": 9
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Enemy Armor Damage",
+    "gPer": 0.5,
+    "gMax": 4
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Health",
+    "gPer": 648,
+    "gMax": 16674
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Health on Kill",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Exotic Damage Reduction",
+    "gPer": 0.5,
+    "gMax": 8
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Skill Haste",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Skill Power",
+    "gPer": 518,
+    "gMax": 13339
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Stability",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Reload Speed",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Weapon Damage",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Ammo Capacity",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Damage to Elites",
+    "gPer": 1,
+    "gMax": 16
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "Increased Kill XP",
+    "gPer": 3,
+    "gMax": 56
+  },
+  {
+    "gType": "Knee pads",
+    "gStat": "X Resistance",
+    "gPer": 2,
+    "gMax": 33
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Armor",
+    "gPer": 12,
+    "gMax": 1001
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Main Stat",
+    "gPer": 7,
+    "gMax": 1401
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Critical Hit Chance",
+    "gPer": 0.5,
+    "gMax": 4
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Critical Hit Damage",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Enemy Armor Damage",
+    "gPer": 0.5,
+    "gMax": 8
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Health",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Health on Kill",
+    "gPer": 1,
+    "gMax": 5
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Exotic Damage Reduction",
+    "gPer": 0.5,
+    "gMax": 11
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Skill Haste",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Skill Power",
+    "gPer": 390,
+    "gMax": 10030
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Stability",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Reload Speed",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Weapon Damage",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Ammo Capacity",
+    "gPer": -1,
+    "gMax": -1
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Damage to Elites",
+    "gPer": 1,
+    "gMax": 12
+  },
+  {
+    "gType": "Mask",
+    "gStat": "Increased Kill XP",
+    "gPer": 1,
+    "gMax": 14
+  },
+  {
+    "gType": "Mask",
+    "gStat": "X Resistance",
+    "gPer": 1,
+    "gMax": 17
+  }
+]
