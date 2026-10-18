@@ -124,26 +124,26 @@ h2 {
 
 .dzw-1 {	
 	background-color: #fff;
-	mask-position: var(--dz-kro);
-	-webkit-mask-position: var(--dz-kro);
+	mask-position: var(--dz-smh);
+	-webkit-mask-position: var(--dz-smh);
 }	
 	
 .dzw-2 {	
-	background-color: var(--col-ne);
-	mask-position: var(--dz-kcl);
-	-webkit-mask-position: var(--dz-kcl);
+	background-color: #fff;
+	mask-position: var(--dz-kmr);
+	-webkit-mask-position: var(--dz-kmr);
 }	
 	
 .dzw-3 {	
 	background-color: #fff;
-	mask-position: var(--dz-ldt);
-	-webkit-mask-position: var(--dz-ldt);
+	mask-position: var(--dz-lsd);
+	-webkit-mask-position: var(--dz-lsd);
 }	
 	
 .dzw-4 {	
-	background-color: var(--col-ne);
-	mask-position: var(--dz-krk);
-	-webkit-mask-position: var(--dz-krk);
+	background-color: #fff;
+	mask-position: var(--dz-hij);
+	-webkit-mask-position: var(--dz-hij);
 }	
 
 .dzw-9 {
