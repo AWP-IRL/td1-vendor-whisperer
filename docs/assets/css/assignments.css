@@ -123,27 +123,27 @@ h2 {
 }
 
 .dzw-1 {	
-	background-color: var(--col-su);
+	background-color: #fff;
 	mask-position: var(--dz-exi);
 	-webkit-mask-position: var(--dz-exi);
 }	
 	
 .dzw-2 {	
 	background-color: #fff;
-	mask-position: var(--dz-smh);
-	-webkit-mask-position: var(--dz-smh);
+	mask-position: var(--dz-kmr);
+	-webkit-mask-position: var(--dz-kmr);
 }	
 	
 .dzw-3 {	
-	background-color: #fff;
-	mask-position: var(--dz-lsd);
-	-webkit-mask-position: var(--dz-lsd);
+	background-color: var(--col-ne);
+	mask-position: var(--dz-klm);
+	-webkit-mask-position: var(--dz-klm);
 }	
 	
 .dzw-4 {	
 	background-color: #fff;
-	mask-position: var(--dz-kcl);
-	-webkit-mask-position: var(--dz-kcl);
+	mask-position: var(--dz-krt);
+	-webkit-mask-position: var(--dz-krt);
 }	
 
 .dzw-9 {
