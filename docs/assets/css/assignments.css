@@ -123,27 +123,27 @@ h2 {
 }
 
 .dzw-1 {	
-	background-color: var(--col-ne);
-	mask-position: var(--dz-ken);
-	-webkit-mask-position: var(--dz-ken);
+	background-color: #fff;
+	mask-position: var(--dz-kro);
+	-webkit-mask-position: var(--dz-kro);
 }	
 	
 .dzw-2 {	
-	background-color: var(--col-el);
-	mask-position: var(--dz-klm);
-	-webkit-mask-position: var(--dz-klm);
+	background-color: var(--col-ne);
+	mask-position: var(--dz-kcl);
+	-webkit-mask-position: var(--dz-kcl);
 }	
 	
 .dzw-3 {	
 	background-color: #fff;
-	mask-position: var(--dz-llc);
-	-webkit-mask-position: var(--dz-llc);
+	mask-position: var(--dz-ldt);
+	-webkit-mask-position: var(--dz-ldt);
 }	
 	
 .dzw-4 {	
-	background-color: #fff;
-	mask-position: var(--dz-hij);
-	-webkit-mask-position: var(--dz-hij);
+	background-color: var(--col-ne);
+	mask-position: var(--dz-krk);
+	-webkit-mask-position: var(--dz-krk);
 }	
 
 .dzw-9 {
